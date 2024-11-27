@@ -4,22 +4,20 @@ import Image from 'next/image';
 import placeholder from '../../public/assets/Images/Gallery1.jpg';
 
 // Component 1: Product Name, Description, and 3D Model
-const ProductOverview = () => (
+const ProductOverview = ({ product }) => (
   <div className="bg-white p-6 border-b border-gray-300">
     <div className="max-w-7xl mx-auto text-center">
       {/* Breadcrumb */}
       <div className="text-gray-500 mb-4 text-left">
-        Home {'>'} Weighing {'>'} ProductName
+        Home {'>'} {product?.category || 'Category'} {'>'} {product?.name || 'Product Name'}
       </div>
 
       {/* Product Title and Description */}
       <h1 className="text-3xl md:text-5xl font-bold text-black">
-        LPG FILLING MACHINE 1
+        {product?.name || 'Product Name'}
       </h1>
       <p className="mt-4 text-lg text-gray-600">
-        Device for liquid LPG overflow prevention by solenoid valve and water
-        thermal switch in case of electric power outage and water low
-        temperature.
+        {product?.description || 'Product description goes here.'}
       </p>
 
       {/* 3D Model Mockup */}
@@ -225,7 +223,7 @@ const ContactForm = ({ onClose }) => {
   );
 };
 
-const ProductPage = () => {
+const ProductPage = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -233,15 +231,15 @@ const ProductPage = () => {
     document.body.style.overflow = 'hidden';
   };
 
-  // Function to close the modal
   const closeModal = () => {
     setIsModalOpen(false);
     document.body.style.overflow = 'auto';
   };
+
   return (
     <div>
-      <ProductOverview />
-      <ProductFeatures />
+      <ProductOverview product={product} />
+      <ProductFeatures product={product} />
       <ProductAppearance />
       <ProductSpecifications />
       <ProductWeight />
