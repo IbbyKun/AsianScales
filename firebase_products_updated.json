@@ -1287,15 +1287,70 @@
         }
     },
     {
+        "id": "gas_049",
+        "name": "Toggle Switch",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "No Description Available.",
+        "images": [
+            "https://i.ibb.co/cvPkqmD/Whats-App-Image-2024-10-07-at-12-50-27-PM-1.jpg",
+            "https://i.ibb.co/FnssH5V/Whats-App-Image-2024-10-07-at-12-50-26-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_050",
+        "name": "Washers",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "No Description Available",
+        "images": [
+            "https://i.ibb.co/6yzKYNY/Whats-App-Image-2024-10-07-at-12-50-20-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
         "id": "weighing_001",
         "name": "Complete Weighbridge System",
         "category": "WEIGHING",
         "subcategory": "Weighing",
         "description": "The Complete Weighbridge System with Serial Communication with PC is an integrated solution designed for accurate and efficient weight measurement of heavy vehicles. This system features robust load cells, a durable platform, and advanced software that communicates seamlessly with a PC via serial communication, allowing for real-time data transfer and monitoring. The system enhances operational efficiency by providing precise weight readings and automated data logging, making it ideal for logistics, construction, and manufacturing applications where accurate weight measurement is critical.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Complete Weighbridge System/Axle_DualSingle-Z.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Complete Weighbridge System/concrete-platform-weighbridge-500x500.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Complete Weighbridge System/maxresdefault.jpg"
+            "https://i.ibb.co/k4R8x8K/concrete-platform-weighbridge-500x500.jpg",
+            "https://i.ibb.co/q7nMkDN/Axle-Dual-Single-Z.jpg",
+            "https://i.ibb.co/Km4RssF/maxresdefault.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1372,8 +1427,8 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/A-700/WhatsApp Image 2024-10-08 at 2.45.36 PM.jpeg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/A-700/WhatsApp Image 2024-10-08 at 2.45.38 PM (1).jpeg"
+            "https://i.ibb.co/g3ccJYm/Whats-App-Image-2024-10-08-at-2-45-36-PM.jpg",
+            "https://i.ibb.co/WvJP7N0/Whats-App-Image-2024-10-08-at-2-45-38-PM-1.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1400,8 +1455,8 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/BST-105,60/1534913498_main.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/BST-105,60/6651846BS-105-Series.png"
+            "https://i.ibb.co/k6V6zD6/1534913498-main.jpg",
+            "https://i.ibb.co/k6V6zD6/1534913498-main.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1428,10 +1483,10 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/BST-106/WhatsApp Image 2024-10-08 at 2.45.35 PM.jpeg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/BST-106/WhatsApp Image 2024-10-08 at 2.45.37 PM.jpeg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/BST-106/WhatsApp Image 2024-10-08 at 2.45.40 PM (1).jpeg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/BST-106/WhatsApp Image 2024-10-08 at 2.45.40 PM.jpeg"
+            "https://i.ibb.co/86TSVkK/Whats-App-Image-2024-10-08-at-2-45-35-PM.jpg",
+            "https://i.ibb.co/yWqXnZq/Whats-App-Image-2024-10-08-at-2-45-37-PM.jpg",
+            "https://i.ibb.co/w07kJ0g/Whats-App-Image-2024-10-08-at-2-45-40-PM-1.jpg",
+            "https://i.ibb.co/S5C7rVQ/Whats-App-Image-2024-10-08-at-2-45-40-PM.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1458,7 +1513,7 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/BST-68/pt20472331-high_anti_jamming_capability_weighing_scale_indicator_smart_load_batch_controller.jpg"
+            "https://i.ibb.co/3SKnwcX/pt20472331-high-anti-jamming-capability-weighing-scale-indicator-smart-load-batch-controller.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1485,8 +1540,8 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/D-60/images.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/D-60/WhatsApp Image 2024-10-08 at 2.45.41 PM.jpeg"
+            "https://i.ibb.co/0Xq1sHQ/images.jpg",
+            "https://i.ibb.co/ryCDwWk/Whats-App-Image-2024-10-08-at-2-45-41-PM.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1513,7 +1568,7 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/D-850/D850.png"
+            "https://i.ibb.co/Jv55HJS/D850.png"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1540,7 +1595,7 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/D-900/D900-LCD.png"
+            "https://i.ibb.co/TPskFtp/D900-LCD.png"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1567,9 +1622,9 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/LP-7516/88fad17322a3867478b4ddce657c9468.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/LP-7516/WhatsApp Image 2024-10-08 at 2.45.36 PM (1).jpeg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/LP-7516/WhatsApp Image 2024-10-08 at 2.45.41 PM (1).jpeg"
+            "https://i.ibb.co/sFY7nq7/Whats-App-Image-2024-10-08-at-2-45-36-PM-1.jpg",
+            "https://i.ibb.co/bJHVNhv/88fad17322a3867478b4ddce657c9468.webp",
+            "https://i.ibb.co/hRjjYkw/Whats-App-Image-2024-10-08-at-2-45-41-PM-1.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1596,8 +1651,8 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/MI-711/WhatsApp Image 2024-10-08 at 2.45.34 PM.jpeg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/MI-711/WhatsApp Image 2024-10-08 at 2.45.39 PM.jpeg"
+            "https://i.ibb.co/bbFbyxK/Whats-App-Image-2024-10-08-at-2-45-34-PM.jpg",
+            "https://i.ibb.co/ZJTJg5s/Whats-App-Image-2024-10-08-at-2-45-39-PM.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1624,8 +1679,8 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/MT-221W/WhatsApp Image 2024-10-08 at 2.45.35 PM (1).jpeg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/MT-221W/WhatsApp Image 2024-10-08 at 2.45.39 PM (1).jpeg"
+            "https://i.ibb.co/sscg0td/Whats-App-Image-2024-10-08-at-2-45-35-PM-1.jpg",
+            "https://i.ibb.co/T8fZkh4/Whats-App-Image-2024-10-08-at-2-45-39-PM-1.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1652,7 +1707,7 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/PF7E/WhatsApp Image 2024-10-08 at 2.45.38 PM.jpeg"
+            "https://i.ibb.co/rkQ1JyG/Whats-App-Image-2024-10-08-at-2-45-38-PM.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1679,7 +1734,7 @@
         "subcategory": "Analog",
         "description": "No description available.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Indicators/Analog/SWI-3000/WhatsApp Image 2024-10-08 at 2.45.37 PM (1).jpeg"
+            "https://i.ibb.co/d68LzwT/Whats-App-Image-2024-10-08-at-2-45-37-PM-1.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1731,7 +1786,7 @@
         "subcategory": "Load Cells",
         "description": "A Ball Type Load Cell is a specific design of load cell that uses a spherical ball as the sensing element to measure weight or force. This type of load cell is known for its ability to handle multi-directional loads and is commonly used in applications where the load may not be perfectly aligned with the sensing axis. Its compact design and high accuracy make it ideal for various industries, including automotive, aerospace, and material testing. Ball type load cells are often used in scales, industrial weighing systems, and force measurement applications due to their durability and reliability.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Load Cells/Ball Type Load Cell/digital-cup-ball-loadcell.png"
+            "https://i.ibb.co/FVBZ4Yz/digital-cup-ball-loadcell.png"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1758,7 +1813,7 @@
         "subcategory": "Load Cells",
         "description": "A Compression Load Cell is a type of load cell designed to measure the force or weight applied through compression. This load cell typically consists of a cylindrical or disc-shaped body that deforms under load, generating a proportional electrical signal. Compression load cells are widely used in various applications, including industrial scales, material testing, and force measurement systems. Their robust construction and high accuracy make them ideal for measuring heavy loads, ensuring reliable performance in demanding environments. Additionally, they are often used in applications where space constraints are a consideration, due to their compact design.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Load Cells/Compression Load Cell/tsf-baski-tip-kapak.jpg"
+            "https://i.ibb.co/64j4y7y/tsf-baski-tip-kapak.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1785,7 +1840,7 @@
         "subcategory": "Load Cells",
         "description": "An S-Type Load Cell is a versatile and highly accurate load cell designed to measure tensile and compressive forces. Shaped like the letter \"S,\" this load cell can be used in various applications, including tension measurement, hanging scales, and force testing. Its dual functionality allows it to handle both pulling and pushing loads, making it ideal for diverse industrial settings. S-Type load cells are known for their high sensitivity and reliability, providing precise weight measurements. Their durable construction ensures long-lasting performance, making them suitable for both static and dynamic weighing applications in industries such as manufacturing, aerospace, and material testing.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Load Cells/S-Type Load Cell/images.jpg"
+            "https://i.ibb.co/bvYFHC9/images.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1812,7 +1867,7 @@
         "subcategory": "Load Cells",
         "description": "A Shear Beam Load Cell is a widely used load cell design that measures weight or force by utilizing shear strain in a beam when a load is applied. Typically shaped like a rectangular beam, this load cell offers high accuracy and stability, making it suitable for various applications, including platform scales, industrial weighing systems, and batch processing. Shear beam load cells are known for their durability and resistance to lateral forces, which ensures reliable performance in demanding environments. Their design allows for easy installation and integration into existing weighing systems, making them a popular choice for industries requiring precise weight measurements.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Load Cells/Shear Beam Load Cell/Shear-Beam-Load-Cell.jpg"
+            "https://i.ibb.co/vhyDddz/Shear-Beam-Load-Cell.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1839,7 +1894,7 @@
         "subcategory": "Load Cells",
         "description": "Single Point Load Cells are compact and versatile load cells designed to measure weight or force at a single point of application. Commonly used in bench scales, retail scales, and other small weighing systems, they feature a simple design that allows for easy installation and integration into various applications. Single point load cells provide accurate and reliable measurements, making them ideal for environments where space is limited. Their robust construction ensures durability, while their ability to handle off-center loads enhances their usability across a wide range of industries, including food processing, packaging, and laboratory settings.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Load Cells/Single Point Load Cells/T12A-Single-Point.jpg"
+            "https://i.ibb.co/V25QtNC/T12-A-Single-Point.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1891,7 +1946,7 @@
         "subcategory": "Spare Components",
         "description": "A Dead Weight is a precision weight used for calibrating and testing weighing instruments, ensuring their accuracy and reliability. It is designed to provide a known mass that can be applied to a scale or load cell for calibration purposes. Dead weights are typically made from high-density materials and come in various sizes, allowing for precise adjustments in a wide range of applications. They are essential tools in laboratories and industrial settings, helping maintain the accuracy of weighing systems and ensuring compliance with industry standards.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Dead Weight/Stainless-Steel-Dead-Weights-Pillow-Type-Calibration-Weights-20kg.jpg"
+            "https://i.ibb.co/sb726NW/Stainless-Steel-Dead-Weights-Pillow-Type-Calibration-Weights-20kg.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1918,8 +1973,8 @@
         "subcategory": "Spare Components",
         "description": "Iron Plates used for supporting load cells are sturdy, flat surfaces designed to provide stable and secure bases for load cell installations. These plates help distribute the load evenly, ensuring accurate weight measurements by minimizing any shifting or movement that could affect the load cell's performance. Typically made from high-quality steel, these iron plates are durable and resistant to deformation, making them ideal for heavy-duty applications in industrial settings. Their design often includes pre-drilled holes for easy installation and alignment with load cells, enhancing the overall reliability and effectiveness of weighing systems.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Iron Plates/images (1).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Iron Plates/images (2).jpg"
+            "https://i.ibb.co/3Wcyn6b/images-1.jpg",
+            "https://i.ibb.co/KNXdRbc/images-2.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1946,8 +2001,8 @@
         "subcategory": "Spare Components",
         "description": "Load Cell Connectors are specialized electrical connectors designed to facilitate the secure and efficient connection between load cells and weighing indicators or data acquisition systems. These connectors ensure reliable signal transmission, allowing accurate weight measurements by minimizing noise and interference. Typically made from durable materials, they are engineered to withstand harsh environmental conditions, making them suitable for industrial applications. Load cell connectors come in various configurations and pin arrangements to match different load cell designs, ensuring compatibility and ease of installation in weighing systems.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Load Cell Connectors/4_wire_-6.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Load Cell Connectors/images (3).jpg"
+            "https://i.ibb.co/yfPJb1R/4-wire-6.jpg",
+            "https://i.ibb.co/wzyJHZV/images-3.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -1974,11 +2029,11 @@
         "subcategory": "Spare Components",
         "description": "Platforms in the context of weighing systems refer to the flat surfaces or bases designed to support items being weighed. They are integral components of various types of scales, including floor scales, platform scales, and industrial scales. These platforms are typically constructed from durable materials such as steel or aluminum to ensure stability and longevity under heavy loads. They are designed to accommodate different sizes and shapes of objects, providing accurate weight measurements by ensuring even load distribution. Many platforms feature non-slip surfaces for safety and may include integration options for load cells to enhance functionality in industrial and commercial applications.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Platforms/download (1).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Platforms/download (2).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Platforms/download.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Platforms/electronic-platform-scale-500x500.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/Platforms/images (4).jpg"
+            "https://i.ibb.co/tLCLWj8/download-1.jpg",
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/6YZ87zx/download.jpg",
+            "https://i.ibb.co/4SG4BJ0/electronic-platform-scale-500x500.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2005,8 +2060,8 @@
         "subcategory": "Spare Components",
         "description": "RS232 Connectors are serial communication connectors used to transmit data between weighing instruments, such as scales and indicators, and external devices like computers, printers, or data loggers. Designed to provide reliable and stable connections, these connectors typically feature a standardized pin configuration, allowing for easy integration and compatibility with various devices. RS232 connectors are commonly used in industrial applications for data transfer, enabling users to collect, monitor, and analyze weight data efficiently. Their robust design ensures durability, making them suitable for demanding environments where consistent performance is essential.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/RS232 Connectors/download (3).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Spare Components/RS232 Connectors/download (4).jpg"
+            "https://i.ibb.co/sKyJ4Ly/download-3.jpg",
+            "https://i.ibb.co/gTYWjvS/download-4.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2058,7 +2113,7 @@
         "subcategory": "Weighing Scales",
         "description": "An Axle Scale is a specialized weighing system designed to measure the weight of individual axles of vehicles, particularly useful for ensuring compliance with weight regulations in transportation. This scale typically features multiple platforms to accommodate vehicles of various sizes and is often used in truck weigh stations, logistics facilities, and construction sites. Axle scales provide accurate weight distribution data, helping to prevent overloads and improve safety on the road. With capabilities for portable or permanent installation, they are essential for efficient vehicle management and compliance with legal weight limits.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Axle scale/download (5).jpg"
+            "https://i.ibb.co/qB0v9v8/download-5.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2085,11 +2140,11 @@
         "subcategory": "Weighing Scales",
         "description": "The Complete Electronic Platform Scale is a highly accurate weighing system designed for a variety of applications, including industrial, commercial, and retail environments. Featuring a sturdy platform and advanced electronic components, this scale provides precise weight measurements and is often equipped with a digital display for easy reading. With capabilities such as tare functions, overload protection, and connectivity options for data transfer, it enhances operational efficiency in inventory management and logistics. Its durable construction ensures reliability, making it an essential tool for any setting that requires consistent and accurate weighing.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Complete Electronic Platform Scale/download (1).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Complete Electronic Platform Scale/download (2).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Complete Electronic Platform Scale/download.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Complete Electronic Platform Scale/electronic-platform-scale-500x500.jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Complete Electronic Platform Scale/images (4).jpg"
+            "https://i.ibb.co/tLCLWj8/download-1.jpg",
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/6YZ87zx/download.jpg",
+            "https://i.ibb.co/4SG4BJ0/electronic-platform-scale-500x500.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2116,7 +2171,7 @@
         "subcategory": "Weighing Scales",
         "description": "A Counting Scale is a specialized weighing instrument designed to accurately count large quantities of identical items, such as screws, bolts, or packaging materials. By determining the weight of a known sample quantity, these scales can calculate and display the total count of items on the platform. Ideal for manufacturing, inventory management, and retail, counting scales enhance efficiency by reducing manual counting time and minimizing errors. Many models come equipped with user-friendly interfaces, programmable settings, and data storage options, making them valuable tools for businesses that rely on precise inventory tracking.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Counting Scale/61pxWq7aJxL._AC_UF1000,1000_QL80_.jpg"
+            "https://i.ibb.co/gTgbQLq/61px-Wq7a-Jx-L-AC-UF1000-1000-QL80.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2143,7 +2198,7 @@
         "subcategory": "Weighing Scales",
         "description": "A Crane Hanging Scale is a portable weighing device designed to measure the weight of heavy loads suspended from a crane or hoist. These scales feature a robust design with a hook or shackle for easy attachment to loads, providing accurate weight measurements in industrial settings. Equipped with digital displays, they often offer features such as overload protection, tare functions, and data logging for enhanced usability. Crane hanging scales are essential for safe lifting operations, ensuring precise weight tracking and compliance with safety regulations in warehouses, construction sites, and manufacturing facilities.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Crane Hanging Scale/OCSA.png"
+            "https://i.ibb.co/kSC6KTs/OCSA.png"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2170,8 +2225,8 @@
         "subcategory": "Weighing Scales",
         "description": "A Floor Scale is a robust weighing device designed for measuring heavy items or large quantities of goods directly on the ground. These scales are typically built with a large, flat platform to accommodate pallets, containers, and machinery, making them ideal for warehouses, distribution centers, and manufacturing facilities. Floor scales are equipped with high-capacity load cells for accurate weight readings and often feature digital displays for easy monitoring. Their durable construction ensures reliability in industrial environments, contributing to efficient inventory management and material handling operations.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Floor Scale/download (2).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Floor Scale/images (4).jpg"
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2198,8 +2253,8 @@
         "subcategory": "Weighing Scales",
         "description": "A General Scale is a versatile weighing instrument suitable for a wide range of applications, from retail to home use. These scales are typically easy to operate and provide accurate weight measurements for various items, such as packages, food, or personal weight. With options for digital or mechanical displays, general scales are designed for everyday use, offering durability and reliability in both commercial and domestic settings. Their portability and user-friendly features make them an essential tool for both personal and business needs.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/General Scale/download (2).jpg",
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/General Scale/images (4).jpg"
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2226,7 +2281,7 @@
         "subcategory": "Weighing Scales",
         "description": "A Lab Balance Scale is a high-precision weighing instrument designed for accurate measurement of small quantities of materials in laboratory settings. These scales feature advanced technology to provide precise weight readings, often with readability to the milligram or microgram level. Lab balances are essential for applications in research, pharmaceuticals, and quality control, where accurate measurement is critical. With user-friendly interfaces and features like tare functions and data logging, they enhance efficiency and reliability in laboratory operations.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Lab Balance Scale/equipment_lab-balances-scales.png"
+            "https://i.ibb.co/rGb75BZ/equipment-lab-balances-scales.png"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2253,7 +2308,7 @@
         "subcategory": "Weighing Scales",
         "description": "A Pallet Scale is a heavy-duty weighing platform designed to measure the weight of pallets and their contents. These scales are commonly used in warehouses, distribution centers, and manufacturing facilities to facilitate inventory management and shipping processes. Equipped with robust load cells, pallet scales provide accurate weight readings and are often designed for easy integration with forklifts or pallet jacks, enhancing operational efficiency and streamlining material handling tasks.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Pallet Scale/EPWL_800_800_whitespace.jpeg"
+            "https://i.ibb.co/cFb37b1/EPWL-800-800-whitespace.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2280,7 +2335,7 @@
         "subcategory": "Weighing Scales",
         "description": "Portable Weighing Pads are lightweight, compact scales designed for easy transport and quick setup in various locations. Ideal for applications such as animal weighing, field measurements, and temporary job sites, these pads offer accurate weight readings while being convenient and user-friendly. Their durable construction and often wireless capabilities make them a practical choice for industries that require flexibility and mobility in their weighing processes.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Portable Weighing Pad/images.jpg"
+            "https://i.ibb.co/R4P9SZh/images.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",
@@ -2307,7 +2362,7 @@
         "subcategory": "Weighing Scales",
         "description": "Washdown Scales are specialized weighing instruments designed for use in environments where cleanliness and hygiene are paramount, such as food processing, pharmaceuticals, and chemical industries. Built with corrosion-resistant materials and sealed against water and dust, these scales can be easily cleaned and sanitized. Their durability and accurate weight measurements make them ideal for applications requiring both precision and stringent sanitation standards.",
         "images": [
-            "/mnt/data/Products_extracted/Products/WEIGHING/Weighing Scales/Washdown Scales/sw.jpg"
+            "https://i.ibb.co/2h1MGvs/sw.jpg"
         ],
         "availability": true,
         "createdAt": "2024-11-19T00:00:00Z",

@@ -77,11 +77,11 @@ const ProductFeatures = ({ product }) => {
             >
               {images.map((image, index) => (
                 <SwiperSlide key={index} className="flex justify-center items-center">
-                  <div className="relative w-48 h-64"> {/* Adjust container size */}
+                  <div className="relative w-full h-64 flex justify-center items-center"> {/* Adjust container size */}
                     <Image
                       src={image}
                       alt={`Product Image ${index + 1}`}
-                      className="rounded-lg shadow-md object-contain"
+                      className="rounded-lg shadow-md object-contain" // or object-cover depending on preference
                       fill
                     />
                   </div>
