@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -13,6 +15,21 @@ import 'swiper/css/pagination';
 
 const ProductFeatures = ({ product }) => {
   const images = product?.images || []; // Fetch images or default to empty array
+  const description = product?.description || ''; // Extract description
+
+  // Split description into lines based on full stop
+  const features = description
+    ? description.split('.').map((feature) => feature.trim()).filter(Boolean)
+    : [];
+
+  // Pair up features into sections
+  const featurePairs = [];
+  for (let i = 0; i < features.length; i += 2) {
+    featurePairs.push(features.slice(i, i + 2)); // Group every two features
+  }
+
+  // Array of logos to cycle through
+  const logos = [logo1, logo2, logo3, logo4, logo5];
 
   return (
     <div className="p-6 border-b border-gray-300 bg-white">
@@ -21,45 +38,29 @@ const ProductFeatures = ({ product }) => {
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-black">Features</h2>
 
-          {/* Icons Section */}
-          <div className="flex items-center space-x-4">
-            <Image src={logo1} alt="Icon" className="w-10 h-10" />
-            <Image src={logo2} alt="Icon" className="w-10 h-10" />
-          </div>
-          <div className="ml-14 text-gray-600">
-            <p className="text-black">
-              • Electric heating with water bath type (Heating medium: water /
-              Heat source: electric heater)
-            </p>
-            <p className="text-black">• Design pressure: 1.77MPa(17bar)</p>
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <Image src={logo3} alt="Icon" className="w-10 h-10" />
-            <Image src={logo4} alt="Icon" className="w-10 h-10" />
-          </div>
-          <div className="ml-14 text-gray-600">
-            <p className="text-black">
-              • Explosion proof: Class I, Division 1, Group D & Ex d IIB T4
-            </p>
-            <p className="text-black">
-              • Electric power: 220V 1P 50/60Hz, 220V 3P 50/60Hz, 380V 3P
-              50/60Hz
-            </p>
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <Image src={logo5} alt="Icon" className="w-10 h-10" />
-            <Image src={logo2} alt="Icon" className="w-10 h-10" />
-          </div>
-          <div className="ml-14 text-gray-600">
-            <p className="text-black">
-              • High quality and long-life electric heater
-            </p>
-            <p className="text-black">
-              • LPG Pressure safety valve: 1.76MPa(17.6bar)
-            </p>
-          </div>
+          {/* Loop through feature pairs and display them with logos */}
+          {featurePairs.map((pair, index) => (
+            <div key={index} className="space-y-4">
+              <div className="flex items-center space-x-4">
+                {/* Display logos in a cycle */}
+                {pair.map((_, logoIndex) => (
+                  <Image
+                    key={logoIndex}
+                    src={logos[logoIndex % logos.length]} // Cycle logos using modulo
+                    alt={`Logo ${logoIndex + 1}`}
+                    className="w-10 h-10"
+                  />
+                ))}
+              </div>
+              <div className="ml-14 text-gray-600">
+                {pair.map((line, lineIndex) => (
+                  <p key={lineIndex} className="text-black">
+                    • {line}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Dynamic Image Carousel */}
@@ -76,15 +77,15 @@ const ProductFeatures = ({ product }) => {
             >
               {images.map((image, index) => (
                 <SwiperSlide key={index} className="flex justify-center items-center">
-                <div className="relative w-48 h-64"> {/* Adjust container size */}
-                  <Image
-                    src={image}
-                    alt={`Product Image ${index + 1}`}
-                    className="rounded-lg shadow-md object-contain" 
-                    fill
-                  />
-                </div>
-              </SwiperSlide>              
+                  <div className="relative w-48 h-64"> {/* Adjust container size */}
+                    <Image
+                      src={image}
+                      alt={`Product Image ${index + 1}`}
+                      className="rounded-lg shadow-md object-contain"
+                      fill
+                    />
+                  </div>
+                </SwiperSlide>
               ))}
             </Swiper>
           ) : (

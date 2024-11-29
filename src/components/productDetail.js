@@ -5,7 +5,7 @@ import placeholder from '../../public/assets/Images/Gallery1.jpg';
 
 // Component 1: Product Name, Description, and 3D Model
 const ProductOverview = ({ product }) => (
-  <div className="bg-white p-6 border-b border-gray-300">
+  <div className="bg-white p-6 border-b border-gray-300 mt-20">
     <div className="max-w-7xl mx-auto text-center">
       {/* Breadcrumb */}
       <div className="text-gray-500 mb-4 text-left">
@@ -46,7 +46,7 @@ const ProductAppearance = () => (
 );
 
 // Component 4: Specifications Table
-const ProductSpecifications = () => (
+const ProductSpecifications = ({ specifications }) => (
   <div className="bg-white p-6 border-b border-gray-300">
     <div className="max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold mb-4 text-black">Specifications</h2>
@@ -63,14 +63,13 @@ const ProductSpecifications = () => (
             </tr>
           </thead>
           <tbody>
-            {/* Add rows of product specifications */}
             <tr className="border-b text-black">
-              <td className="p-2">KEV-400</td>
-              <td className="p-2">30</td>
-              <td className="p-2">45kw</td>
-              <td className="p-2">890 x 1055 x 1150</td>
-              <td className="p-2">204 x 4.1"</td>
-              <td className="p-2">204 x 4.1"</td>
+              <td className="p-2">{specifications?.modelNumber || '-'}</td>
+              <td className="p-2">{specifications?.capacity || '-'}</td>
+              <td className="p-2">{specifications?.heater || '-'}</td>
+              <td className="p-2">{specifications?.dimensions || '-'}</td>
+              <td className="p-2">{specifications?.inletSize || '-'}</td>
+              <td className="p-2">{specifications?.outletSize || '-'}</td>
             </tr>
           </tbody>
         </table>
@@ -80,7 +79,7 @@ const ProductSpecifications = () => (
 );
 
 // Component 5: Weight Table
-const ProductWeight = () => (
+const ProductWeight = ({ weight }) => (
   <div className="bg-white p-6 border-b border-gray-300">
     <div className="max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold mb-4 text-black">Weight (KG)</h2>
@@ -96,10 +95,10 @@ const ProductWeight = () => (
           </thead>
           <tbody>
             <tr className="border-b text-black">
-              <td className="p-2">KEV-400</td>
-              <td className="p-2">95</td>
-              <td className="p-2">168.5</td>
-              <td className="p-2">172.5</td>
+              <td className="p-2">{weight?.modelNumber || '-'}</td>
+              <td className="p-2">{weight?.empty || '-'}</td>
+              <td className="p-2">{weight?.operation || '-'}</td>
+              <td className="p-2">{weight?.full || '-'}</td>
             </tr>
           </tbody>
         </table>
@@ -240,9 +239,8 @@ const ProductPage = ({ product }) => {
     <div>
       <ProductOverview product={product} />
       <ProductFeatures product={product} />
-      <ProductAppearance />
-      <ProductSpecifications />
-      <ProductWeight />
+      <ProductSpecifications specifications={product?.specifications} />
+      <ProductWeight weight={product?.weight} />
 
       <a
         href="#"
