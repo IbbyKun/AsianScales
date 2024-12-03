@@ -40,12 +40,20 @@ export default function Blogs() {
               <h2 className="text-lg font-bold text-black">{blog.title}</h2>
               <p className="text-gray-500">{blog.category}</p>
             </div>
-            <button
-              className="bg-red-500 text-white px-4 py-2 rounded"
-              onClick={() => handleDelete(blog.id)}
-            >
-              Delete
-            </button>
+            <div className="space-x-2">
+              <button
+                className="bg-blue-500 text-white px-4 py-2 rounded"
+                onClick={() => router.push(`admin/add?edit=${blog.id}`)}
+              >
+                Edit
+              </button>
+              <button
+                className="bg-red-500 text-white px-4 py-2 rounded"
+                onClick={() => handleDelete(blog.id)}
+              >
+                Delete
+              </button>
+            </div>
           </div>
         ))}
       </div>

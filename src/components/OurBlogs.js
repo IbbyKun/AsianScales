@@ -2,15 +2,17 @@ import React from 'react';
 import HeroSection from './Cover';
 import Image from 'next/image';
 
-
-const blogPosts = [
+export const blogPosts = [
   {
     id: 1,
+    slug: 'how-to-quickly-deploy-static-website',
     category: 'Tutorial',
     date: '14 days ago',
     title: 'How to quickly deploy a static website',
     description:
       'Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.',
+    content: 'Full blog content goes here...',
+    image: '/assets/blog/deploy-static-website.jpg',
     author: 'Jese Leos',
     authorImage:
       'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png',
@@ -82,7 +84,7 @@ const BlogSection = () => {
                   </span>
                 </div>
                 <h2 className="mb-2 text-4xl font-bold bebas-neue-regular text-gray-900 group-hover:text-white">
-                  <a href="#">{post.title}</a>
+                  <a href={`/blogs/${post.slug}`}>{post.title}</a>
                 </h2>
                 <p className="mb-5 font-light text-gray-500 group-hover:text-white">
                   {post.description}
@@ -101,7 +103,7 @@ const BlogSection = () => {
                     </span>
                   </div>
                   <a
-                    href="#"
+                    href={`/blogs/${post.slug}`}
                     className="inline-flex items-center font-medium text-primary-600 hover:underline group-hover:text-white"
                   >
                     Read more
