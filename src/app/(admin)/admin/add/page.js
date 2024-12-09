@@ -21,12 +21,15 @@ export default function AddBlog() {
     slug: '',
   });
 
+  const [isImageLoading, setIsImageLoading] = useState(true);
+
   // Fetch the blog data for editing if editId is present
   useEffect(() => {
     if (editId) {
       const getBlogData = async () => {
-        const blogData = await fetchBlogById(editId); // Fetch blog by ID
-        setBlog(blogData); // Populate form fields with existing blog data
+        const blogData = await fetchBlogById(editId);
+        setBlog(blogData);
+        setIsImageLoading(true);
       };
 
       getBlogData();
@@ -51,13 +54,36 @@ export default function AddBlog() {
     setBlog({ ...blog, description: value });
   };
 
+  const handleImageLoad = () => {
+    setIsImageLoading(false);
+  };
+
   const handleDone = async () => {
+    let imageUrl = blog.coverImage;
+
+    // If there's a new image (File type), upload it to Cloudinary
+    if (blog.coverImage && blog.coverImage instanceof File) {
+      const data = new FormData();
+      data.append('file', blog.coverImage);
+      data.append('upload_preset', 'asianScalesPreset');
+      data.append('cloud_name', 'dgyiw2zu8');
+
+      const res = await fetch('https://api.cloudinary.com/v1_1/dgyiw2zu8/image/upload', {
+        method: 'POST',
+        body: data,
+      });
+      const uploadedImageURL = await res.json();
+      imageUrl = uploadedImageURL.url;
+    }
+
+    const blogData = { ...blog, coverImage: imageUrl };
+
     if (editId) {
       // If editing, update the existing blog
-      await updateBlog(editId, blog);
+      await updateBlog(editId, blogData);
     } else {
       // If adding, create a new blog
-      await addBlog(blog);
+      await addBlog(blogData);
     }
 
     // Redirect to the dashboard after saving the blog
@@ -70,13 +96,36 @@ export default function AddBlog() {
         {editId ? 'Edit Blog' : 'Add New Blog'}
       </h1>
       <div className="space-y-4 bg-white p-6 rounded shadow">
+        {/* Image Preview Container */}
+        {blog.coverImage && !blog.coverImage instanceof File && (
+          <div className="mb-4">
+            {isImageLoading ? (
+              <div className="w-full h-64 flex justify-center items-center">
+                <span className="text-lg text-gray-500">Loading...</span>
+              </div>
+            ) : (
+              <div className="w-full h-64 flex justify-center items-center">
+                <img
+                  src={blog.coverImage}
+                  alt="Cover Image"
+                  className="w-full h-full object-cover rounded"
+                  onLoad={handleImageLoad}
+                  onError={(e) => e.target.style.display = 'none'}
+                />
+              </div>
+            )}
+            <p className="text-sm text-gray-500">Current Image</p>
+          </div>
+        )}
+
+        {/* Image input (allow replacing the image) */}
         <input
           type="file"
           accept="image/*"
           className="w-full p-2 border rounded text-gray-400"
           onChange={handleImageChange}
-          disabled={editId} // Disable image upload during editing (optional)
         />
+        
         <input
           type="text"
           name="title"
