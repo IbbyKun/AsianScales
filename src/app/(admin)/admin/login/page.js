@@ -5,8 +5,8 @@ export default function Home() {
   const router = useRouter();
 
   const handleLogin = () => {
-    router.push('admin/dashboard'); // Navigate to blogs page after login
-  };
+    router.push('/admin/dashboard');  // This will correctly navigate to /admin/dashboard
+  };  
 
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-customGray">
