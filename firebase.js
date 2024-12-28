@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
+import { getAuth } from 'firebase/auth';
 
 // Firebase configuration from environment variables
 const firebaseConfig = {
@@ -24,4 +25,10 @@ const db = getFirestore(app);
 // Initialize Firebase Storage
 const storage = getStorage(app);
 
+export const isAdmin = (email) => {
+  const adminEmail = "asianscales7@gmail.com"; 
+  return email === adminEmail;
+};
+
 export { app, db, storage };
+export const auth = getAuth(app);
