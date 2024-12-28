@@ -1,7 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from '../../public/assets/Images/Gallery1.jpg'; // Import the image properly
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    category: '',
+    company: '',
+    country: '',
+    countryCode: '',
+    phoneNo: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          category: '',
+          company: '',
+          country: '',
+          countryCode: '',
+          phoneNo: '',
+          message: ''
+        });
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again later.');
+    }
+  };
+
   return (
     <div className="relative max-w-full py-10 lg:py-14 mx-auto bg-white">
       {/* Background Image */}
@@ -28,13 +80,17 @@ const ContactUs = () => {
       </div>
 
       <div className="relative z-10 max-w-2xl mx-auto mt-60">
-        <form className="bg-[#0B1C3D] p-8 rounded-lg shadow-md">
+        <form onSubmit={handleSubmit} className="bg-[#0B1C3D] p-8 rounded-lg shadow-md">
           {/* Name */}
           <div className="mb-2">
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Name"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             />
           </div>
 
@@ -42,8 +98,12 @@ const ContactUs = () => {
           <div className="mb-2">
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Email"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             />
           </div>
 
@@ -51,8 +111,12 @@ const ContactUs = () => {
           <div className="mb-2">
             <input
               type="text"
+              name="category"
+              value={formData.category}
+              onChange={handleChange}
               placeholder="Category"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             />
           </div>
 
@@ -60,13 +124,21 @@ const ContactUs = () => {
           <div className="mb-2 flex gap-4">
             <input
               type="text"
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
               placeholder="Company"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             />
             <input
               type="text"
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
               placeholder="Country"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             />
           </div>
 
@@ -74,22 +146,34 @@ const ContactUs = () => {
           <div className="mb-2 flex gap-4">
             <input
               type="text"
+              name="countryCode"
+              value={formData.countryCode}
+              onChange={handleChange}
               placeholder="Country Code"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             />
             <input
               type="text"
+              name="phoneNo"
+              value={formData.phoneNo}
+              onChange={handleChange}
               placeholder="Phone No"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             />
           </div>
 
           {/* Your Message */}
           <div className="mb-2">
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Your Message"
               rows="4"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+              required
             ></textarea>
           </div>
 
@@ -132,7 +216,7 @@ const ContactUs = () => {
               Knowledgebase
             </h3>
             <p className="mt-1 text-gray-500 dark:text-neutral-500">
-              We're here to help with any questions or code.
+              We&apos;re here to help with any questions or code.
             </p>
             <p className="mt-5 inline-flex items-center gap-x-1 font-medium text-blue-600 dark:text-blue-500">
               Email

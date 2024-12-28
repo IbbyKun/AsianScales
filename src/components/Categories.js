@@ -4,16 +4,20 @@ import React from 'react';
 import Image from 'next/image';
 import image1 from '../../public/assets/Images/person1.jpg'; // Replace with actual image
 import image2 from '../../public/assets/Images/person2.jpg'; // Replace with actual image
+import { useRouter } from 'next/navigation';
 
 const ProductCategories = () => {
+  const router = useRouter();
   const categories = [
     {
       title: 'Weighing',
       imgSrc: image1, // Image path
+      link: '/list/weighing',
     },
     {
       title: 'Gas',
       imgSrc: image2, // Image path
+      link: '/list/gas',
     },
   ];
 
@@ -42,6 +46,7 @@ const ProductCategories = () => {
           <div
             key={index}
             className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+            onClick={() => router.push(category.link)}
           >
             {/* Image */}
             <Image

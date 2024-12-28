@@ -24,6 +24,15 @@ module.exports = {
         coverBlue: '#052445',
         customBlue: '#07509F',
       },
+      keyframes: {
+        slideDown: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(0)' }
+        }
+      },
+      animation: {
+        slideDown: 'slideDown 0.3s ease-in-out forwards'
+      }
     },
   },
   plugins: [],
