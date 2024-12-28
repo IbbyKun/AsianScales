@@ -1,0 +1,2385 @@
+[
+    {
+        "id": "gas_001",
+        "name": "Air Dryer",
+        "category": "GAS",
+        "subcategory": "Gas",
+        "description": "An air dryer is a crucial device used to remove moisture from compressed air systems, ensuring the air remains dry and preventing corrosion or damage to pneumatic tools, machinery, and pipelines. It enhances the efficiency and lifespan of equipment by delivering clean, moisture-free air.",
+        "images": [
+            "https://i.ibb.co/LZKRV5Y/Air-Dryer1.jpg",
+            "https://i.ibb.co/6NLyLcz/Air-Dryer2.jpg",
+            "https://i.ibb.co/54t7bPN/Air-Dryer3.jpg",
+            "https://i.ibb.co/Lz0LLXR/Air-Dryer4.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_002",
+        "name": "Automatic Lpg Cylinder Filling Machine (Complete)",
+        "category": "GAS",
+        "subcategory": "Gas",
+        "description": "The Automatic LPG Cylinder Filling Machine is an advanced system designed to efficiently fill LPG cylinders with precision and safety. It automates the entire filling process, reducing manual intervention and minimizing human error. Equipped with digital control systems and safety features, it ensures accurate weight measurement and consistent filling volumes. This machine is ideal for high-volume operations, offering increased productivity, enhanced safety, and compliance with industry standards for LPG cylinder filling.",
+        "images": [
+            "https://i.ibb.co/sCkrb6S/LPGcylinder1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_003",
+        "name": "Automatic Lpg Cylinder Filling Machine (Double Nozzle) (Complete)",
+        "category": "GAS",
+        "subcategory": "Gas",
+        "description": "The Automatic LPG Cylinder Filling Machine (Double Nozzle) is designed for high-efficiency operations, allowing two cylinders to be filled simultaneously. It features two separate nozzles\u2014one for part filling and the other for precision filling\u2014ensuring faster throughput and highly accurate filling volumes. This dual-nozzle system optimizes the filling process by combining speed with precision, making it ideal for industrial applications that demand both productivity and accuracy. The machine is equipped with advanced safety and control mechanisms, ensuring reliable performance while adhering to strict industry standards.",
+        "images": [
+            "https://i.ibb.co/1JQvRVY/lpg-cylinder-complete.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_004",
+        "name": "Automatic Lpg Dispensing Unit (Complete)",
+        "category": "GAS",
+        "subcategory": "Gas",
+        "description": "The Automatic LPG Dispensing Unit is a specialized solution designed for retail stores, ensuring a safe and efficient LPG decanting process. This unit automates the transfer of LPG from bulk storage tanks to smaller cylinders, reducing manual handling and enhancing safety. Equipped with advanced safety controls, leak detection, and precise metering, the dispensing unit ensures accurate and secure refilling, making it an ideal solution for retail environments that prioritize both customer safety and operational efficiency.",
+        "images": [
+            "https://i.ibb.co/8dZ2V95/lpg-dispensing-2.jpg",
+            "https://i.ibb.co/7gCyVyx/lpg-dispensing-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_005",
+        "name": "Lpg Filling Heads",
+        "category": "GAS",
+        "subcategory": "Gas",
+        "description": "LPG Filling Heads are precision-engineered components used in LPG filling systems to ensure safe and accurate transfer of LPG into cylinders. These heads are designed to securely connect to cylinder valves, preventing leaks and ensuring efficient gas flow during the filling process. Built for durability and reliability, LPG filling heads play a critical role in maintaining safety standards and optimizing the performance of automated and manual LPG filling operations.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_006",
+        "name": "Assembly Back Spring",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Assembly Back Spring is essential for maintaining tension and alignment in the filling head, ensuring smooth operation during the filling process. Its robust design enhances durability and reduces wear on moving parts, contributing to overall efficiency and safety.",
+        "images": [
+            "https://i.ibb.co/ChF11H4/assembly-backspring.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_007",
+        "name": "Boki Seals",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Boki Seals are essential sealing components in the filling head, designed to prevent gas leaks and ensure a secure connection during the filling process. Their high-quality materials and precision design provide reliable performance and enhance the safety of LPG operations.",
+        "images": [
+            "https://i.ibb.co/QYyKvcp/bokiseals.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_008",
+        "name": "Catcher Holder Cup",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Catcher Holder Cup is a vital component of the filling head that securely holds and positions the filling nozzle during operation. It prevents spills and ensures proper alignment for safe and efficient LPG transfer, enhancing the overall functionality of the filling system.",
+        "images": [
+            "https://i.ibb.co/PjnGt0t/catcher.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_009",
+        "name": "Catcher Set",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Catcher Set comprises components that work together to collect and contain any residual gas or liquid during the LPG filling process. This set enhances safety by preventing spills and leaks, ensuring a clean and efficient operation while maintaining compliance with safety regulations.",
+        "images": [
+            "https://i.ibb.co/Qbtz5j0/catcherset.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_010",
+        "name": "Catcher Spring",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Catcher Spring is an essential component that provides tension and support to the catcher mechanism in the filling head. It ensures smooth operation and proper alignment, allowing for effective gas collection during the filling process while enhancing overall safety and efficiency.",
+        "images": [
+            "https://i.ibb.co/GCJkSzW/catcherspring.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_011",
+        "name": "Head Assembly",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Head Assembly is a complete unit that integrates all essential components of the filling head, ensuring proper functionality during LPG transfer. It provides a secure and reliable connection to the cylinder, facilitating efficient filling while maintaining safety standards and preventing leaks.",
+        "images": [
+            "https://i.ibb.co/DfDmKtW/head-assembly.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_012",
+        "name": "Head Assembly Nut",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Head Assembly Nut is a fastening component that secures the head assembly to the filling head, ensuring a tight and stable connection. Its durable construction is crucial for maintaining the integrity of the assembly, preventing leaks and ensuring reliable performance during LPG filling operations.",
+        "images": [
+            "https://i.ibb.co/CnC0637/head-assembly-nut.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_013",
+        "name": "Head Lock",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Head Lock is a critical safety feature that secures the filling head in place during the LPG filling process. It prevents accidental disconnection and ensures a tight seal, enhancing operational safety and reliability while minimizing the risk of gas leaks.",
+        "images": [
+            "https://i.ibb.co/dMGGjG7/headlock.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_014",
+        "name": "Head Pin Nut Set",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Head Pin Nut Set includes essential fasteners that secure the head pin in place within the filling head assembly. This set ensures stable and reliable connections, contributing to the overall integrity and functionality of the filling system during LPG transfer operations.",
+        "images": [
+            "https://i.ibb.co/V9NV7Lq/headpinnutset.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_015",
+        "name": "Head Pin Spring",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Head Pin Spring is a vital component that provides tension to the head pin mechanism, allowing for smooth operation and secure positioning of the filling head. It enhances the responsiveness of the filling process and helps maintain proper alignment, ensuring safety and efficiency during LPG transfers.",
+        "images": [
+            "https://i.ibb.co/BG9R0Rh/headpinspring.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_016",
+        "name": "Head Rings",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Head Rings are essential sealing components in the filling head that ensure a secure and leak-proof connection between the filling head and the cylinder. Their durable design provides effective sealing during LPG transfer, enhancing safety and reliability in the filling process.",
+        "images": [
+            "https://i.ibb.co/NFz2zvY/headrings.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_017",
+        "name": "Head Seals",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Head Seals are critical sealing elements in the filling head that prevent gas leaks during the LPG filling process. Made from high-quality materials, they ensure a secure fit and maintain the integrity of the connection, enhancing safety and operational efficiency.",
+        "images": [
+            "https://i.ibb.co/QnTfY0s/Whats-App-Image-2024-10-05-at-1-32-16-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_018",
+        "name": "Head Spring",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Head Spring is an essential component that provides tension and support within the filling head, ensuring smooth and reliable operation. It aids in maintaining proper alignment and responsiveness during the LPG filling process, contributing to overall safety and efficiency.",
+        "images": [
+            "https://i.ibb.co/MMCw8Xc/Whats-App-Image-2024-10-05-at-1-32-14-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_019",
+        "name": "Head Tool Kit",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The Head Tool Kit is a comprehensive set of tools specifically designed for the maintenance and repair of the filling head assembly. It includes all necessary instruments to ensure proper installation, adjustments, and troubleshooting, facilitating efficient upkeep and enhancing the longevity of the filling system.",
+        "images": [
+            "https://i.ibb.co/2swSRQM/Whats-App-Image-2024-10-05-at-1-32-14-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_020",
+        "name": "Universal Clutch Filling Head",
+        "category": "GAS",
+        "subcategory": "Lpg Filling Heads",
+        "description": "The Universal Clutch Filling Head (Manual) is a specially designed device for the safe and efficient filling of LPG cylinders, utilizing a manual clutch mechanism for precise control during the filling process. This filling head is compatible with various cylinder sizes and types, offering versatility in filling applications. Its robust and durable construction ensures reliable performance, while the manual operation provides operators with greater control over the filling process. With safety features to prevent leaks and enhance operational safety, this manual filling head is ideal for facilities that require a dependable solution for LPG handling.",
+        "images": [
+            "https://i.ibb.co/XtvmTf9/Whats-App-Image-2024-10-05-at-12-42-38-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_021",
+        "name": "Universal Pneumatic Filling Head",
+        "category": "GAS",
+        "subcategory": "Lpg Filling Heads",
+        "description": "The Universal Pneumatic Filling Head is a versatile device designed for efficient and safe filling of various gas cylinders, including LPG. This filling head features a pneumatic actuation system, allowing for smooth and precise filling operations while minimizing the risk of leaks. Its universal design enables compatibility with different cylinder types and sizes, making it an essential tool for filling stations and industrial applications. With robust construction and safety features, it ensures reliable performance and adherence to safety standards during the gas filling process.",
+        "images": [
+            "https://i.ibb.co/gvLXczG/Whats-App-Image-2024-10-05-at-12-42-39-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_022",
+        "name": "Assembly Fitting",
+        "category": "GAS",
+        "subcategory": "New Folder",
+        "description": "The Assembly Fitting is a crucial component that connects various parts of the filling head, ensuring a secure and leak-proof assembly. Its durable construction provides reliable performance, allowing for efficient LPG transfer during the filling process.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_023",
+        "name": "Auto Guaging Monitoring System For Lpg Storage Tank (Complete)",
+        "category": "GAS",
+        "subcategory": "New Folder",
+        "description": "The Auto Gauging Monitoring System for LPG Storage Tanks is a comprehensive solution designed to continuously monitor and measure the LPG levels in storage tanks. It provides real-time data on tank pressure, temperature, and liquid levels, ensuring accurate inventory management and enhancing safety. The system is equipped with automatic alerts and remote monitoring capabilities, optimizing operational efficiency and reducing the risk of overfilling or under-pressurization.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_024",
+        "name": "Compressor",
+        "category": "GAS",
+        "subcategory": "New Folder",
+        "description": "A Compressor for Residual Gas is designed to recover and compress leftover or residual gas from LPG storage tanks or cylinders. This process minimizes gas wastage by capturing low-pressure gas and compressing it for reuse or safe storage. It enhances operational efficiency, reduces emissions, and ensures cost-effectiveness in LPG handling and recovery processes, making it a vital component for sustainable gas management in industrial applications.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_025",
+        "name": "Head Assembly Spring",
+        "category": "GAS",
+        "subcategory": "New Folder",
+        "description": "The Head Assembly Spring is a key component that provides necessary tension within the head assembly, allowing for smooth operation of the filling mechanism. It ensures proper alignment and responsiveness during the filling process, enhancing the overall efficiency and safety of LPG transfers.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_026",
+        "name": "Pin Head",
+        "category": "GAS",
+        "subcategory": "New Folder",
+        "description": "The Pin Head is a critical component in the filling head assembly that serves as a guide or pivot point for various mechanisms during the LPG filling process. Its robust design ensures precise alignment and smooth operation, contributing to the overall functionality and reliability of the filling system.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_027",
+        "name": "Air Filter Dead Plug",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "An Air Filter Dead Plug is a component used in gas filling machines to seal the air filter during maintenance or when not in use, preventing contaminants from entering the gas system. This ensures the purity and quality of the gas being filled, enhancing operational safety and efficiency.",
+        "images": [
+            "https://i.ibb.co/GQ842wL/Whats-App-Image-2024-10-07-at-12-50-20-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_028",
+        "name": "Air Pipe 6Mm",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Air Pipe 6mm is a durable tubing component used in gas filling machines to transport compressed air or gases efficiently. Its 6mm diameter ensures optimal flow rates while maintaining flexibility and resistance to pressure, making it ideal for various industrial applications.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_029",
+        "name": "Air Pipe 8Mm",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Air Pipe 8mm is a durable tubing component used in gas filling machines to transport compressed air or gases efficiently. Its 8mm diameter ensures optimal flow rates while maintaining flexibility and resistance to pressure, making it ideal for various industrial applications.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_030",
+        "name": "Barrel Nipple",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Barrel Nipple is a fitting used in gas filling machines to connect two pipes or hoses, providing a secure and leak-free junction. Typically featuring a threaded design, it allows for easy installation and disconnection, ensuring efficient flow of gases or liquids in various industrial applications.",
+        "images": [
+            "https://i.ibb.co/BPHYz9c/Whats-App-Image-2024-10-07-at-12-50-22-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_031",
+        "name": "Bush",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Bush is a cylindrical insert or fitting used in gas filling machines to reduce or adapt the size of a pipe or connector. It provides a secure and stable connection, allowing for the seamless transition between different pipe diameters and ensuring efficient fluid or gas flow within the system.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_032",
+        "name": "Clutch L-Key Bolts",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Clutch L-Key Bolts are specialized fasteners designed for securing components in gas filling machines and other equipment. Their unique L-shaped design allows for easy tightening and loosening in tight spaces, ensuring a reliable and secure fit for clutch assemblies and related parts.",
+        "images": [
+            "https://i.ibb.co/305bWZ7/Whats-App-Image-2024-10-07-at-12-50-21-PM.jpg",
+            "https://i.ibb.co/pw2FXPT/Whats-App-Image-2024-10-07-at-12-50-22-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_033",
+        "name": "Controller Unit",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "No description available.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_034",
+        "name": "Cylinder Threaded Valve",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Cylinder Threaded Valve is a crucial component used in gas filling systems to control the flow of gas from a cylinder. Featuring a threaded connection for secure attachment, this valve allows for precise regulation of gas release, ensuring safe and efficient operation during filling or dispensing processes.",
+        "images": [
+            "https://i.ibb.co/Gn2PMSS/Whats-App-Image-2024-10-07-at-12-50-26-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_035",
+        "name": "Emergency Switch",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "An Emergency Switch is a safety device used in gas filling machines to immediately shut down operations in case of an emergency. This switch allows operators to quickly and easily stop the gas flow, reducing the risk of accidents and ensuring the safety of personnel and equipment during critical situations.",
+        "images": [
+            "https://i.ibb.co/4RsZXkR/Whats-App-Image-2024-10-07-at-12-50-28-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_036",
+        "name": "Frl Air Filter Unit",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "The FRL Air Filter Unit is a critical component in pneumatic systems, including gas filling machines, that combines a filter, regulator, and lubricator. This unit removes contaminants and moisture from compressed air, regulates air pressure for optimal performance, and adds lubrication to ensure smooth operation of pneumatic components, enhancing system efficiency and reliability.",
+        "images": [
+            "https://i.ibb.co/8MxD0DN/Whats-App-Image-2024-10-07-at-1-12-29-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_037",
+        "name": "Gas Stop Valve (Unibody)",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Gas Stop Valve (Unibody) operated with air is a robust safety device designed to control the flow of gas in filling systems. Constructed as a single-piece unit, it provides enhanced durability and leak resistance, while the air-operated mechanism allows for quick and reliable opening and closing of the valve, ensuring safe and efficient gas management during operations.",
+        "images": [
+            "https://i.ibb.co/ZKSyB8z/Whats-App-Image-2024-10-07-at-1-12-31-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_038",
+        "name": "Gas Stop Valve (Y-Type)",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Gas Stop Valve (Y-Type) is a specialized valve designed to control gas flow in filling systems with a Y-shaped configuration for enhanced flow efficiency. Its design minimizes pressure drops and allows for effective isolation of gas lines, making it ideal for applications where reliable shut-off and smooth flow regulation are essential for safety and operational efficiency.",
+        "images": [
+            "https://i.ibb.co/hLkC57N/Whats-App-Image-2024-10-07-at-1-12-30-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_039",
+        "name": "Glands",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Glands are sealing devices used in gas filling machines to prevent gas leakage at connection points between pipes, hoses, or fittings. They provide a secure and tight seal, ensuring the integrity of the gas system while accommodating movement and vibration, thereby enhancing safety and operational efficiency.",
+        "images": [
+            "https://i.ibb.co/G9DtkLR/Whats-App-Image-2024-10-07-at-12-50-23-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_040",
+        "name": "Handle Valve",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Handle Valve is a manual control device used in gas filling machines to regulate the flow of gas. Equipped with a lever or handle for easy operation, it allows operators to quickly open or close the valve, providing precise control over gas flow and ensuring safe and efficient filling operations.",
+        "images": [
+            "https://i.ibb.co/KqWvc6S/Whats-App-Image-2024-10-07-at-12-50-28-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_041",
+        "name": "Hanging Spring",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/RHZbqx2/Whats-App-Image-2024-10-07-at-1-12-29-PM.jpg",
+            "https://i.ibb.co/3WRHV9k/Whats-App-Image-2024-10-07-at-1-12-32-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_042",
+        "name": "Hose Pipe",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Hose Pipe is a flexible tube used in gas filling machines to transport gas or liquid between various components. Designed for durability and resistance to pressure, it ensures safe and efficient transfer while allowing for easy maneuverability in different industrial applications.",
+        "images": [
+            "https://i.ibb.co/P5jfm0k/Whats-App-Image-2024-10-12-at-3-02-57-PM-1.jpg",
+            "https://i.ibb.co/r2vH2GT/Whats-App-Image-2024-10-12-at-3-02-57-PM.jpg",
+            "https://i.ibb.co/2nX9M7r/Whats-App-Image-2024-10-12-at-3-02-58-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_043",
+        "name": "Ms T- Connector",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Mild Steel T-Connector is a robust fitting used in gas filling systems to join three pipes or hoses at a right angle, forming a T-shaped junction. Made from durable mild steel, it provides strength and stability for gas flow connections, ensuring reliable and leak-free operation in various industrial applications.",
+        "images": [
+            "https://i.ibb.co/vxZngBw/Whats-App-Image-2024-10-07-at-12-50-25-PM-1.jpg",
+            "https://i.ibb.co/R0TyqkJ/Whats-App-Image-2024-10-07-at-12-50-25-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_044",
+        "name": "Pneumatic Connector",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Pneumatic Connector is a fitting used to connect pneumatic tubing or hoses in gas filling machines and other compressed air systems. Designed for quick and secure connections, it ensures efficient airflow and is typically made from durable materials to withstand pressure and environmental conditions, enhancing overall system reliability.",
+        "images": [
+            "https://i.ibb.co/CnJyhPV/Whats-App-Image-2024-10-07-at-12-50-21-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_045",
+        "name": "Power Supply",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A 24V DC Power Supply is an electrical device that converts alternating current (AC) to a stable 24-volt direct current (DC) output. It is commonly used in gas filling machines and other industrial equipment to power various components, including sensors, control systems, and solenoid valves, ensuring reliable operation and performance across a range of applications.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_046",
+        "name": "Solenoid Valves",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Solenoid Valves are electromechanical devices used to control the flow of gas or liquid in gas filling machines. They operate by using an electric current to create a magnetic field that moves a plunger, opening or closing the valve. This allows for precise control of gas flow and pressure, enhancing operational efficiency and safety in various industrial applications.",
+        "images": [
+            "https://i.ibb.co/NFT2TKr/Whats-App-Image-2024-10-07-at-1-12-30-PM.jpg",
+            "https://i.ibb.co/Q8N1tZy/Whats-App-Image-2024-10-07-at-1-12-31-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_047",
+        "name": "Spring Balancer",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "Spring Balancers are devices used to support and balance the weight of tools or equipment in various industrial applications. They employ a spring mechanism that allows for easy lifting and maneuvering while minimizing operator fatigue. Ideal for use in gas filling and manufacturing environments, spring balancers help maintain efficiency and safety by keeping tools readily accessible and reducing the risk of accidental drops.",
+        "images": [
+            "https://i.ibb.co/hFy66Dk/Whats-App-Image-2024-10-07-at-2-34-02-PM-1.jpg",
+            "https://i.ibb.co/tB2VjHM/ek-370274.png",
+            "https://i.ibb.co/gF4sxCH/Whats-App-Image-2024-10-07-at-2-34-02-PM.jpg",
+            "https://i.ibb.co/StcjS3W/Whats-App-Image-2024-10-07-at-12-50-23-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_048",
+        "name": "Ss Elbows",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "A Stainless Steel Elbow is a pipe fitting that allows for a change in direction in piping systems, typically at a 90-degree or 45-degree angle. Made from durable stainless steel, it offers excellent corrosion resistance and strength, making it ideal for use in gas filling machines and other applications where cleanliness and durability are critical for safe and efficient fluid or gas flow.",
+        "images": [
+            "https://i.ibb.co/k6Wc3yv/Whats-App-Image-2024-10-07-at-12-50-24-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_049",
+        "name": "Toggle Switch",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "No Description Available.",
+        "images": [
+            "https://i.ibb.co/cvPkqmD/Whats-App-Image-2024-10-07-at-12-50-27-PM-1.jpg",
+            "https://i.ibb.co/FnssH5V/Whats-App-Image-2024-10-07-at-12-50-26-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "gas_050",
+        "name": "Washers",
+        "category": "GAS",
+        "subcategory": "Spare Components",
+        "description": "No Description Available",
+        "images": [
+            "https://i.ibb.co/6yzKYNY/Whats-App-Image-2024-10-07-at-12-50-20-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_001",
+        "name": "Complete Weighbridge System",
+        "category": "WEIGHING",
+        "subcategory": "Weighing",
+        "description": "The Complete Weighbridge System with Serial Communication with PC is an integrated solution designed for accurate and efficient weight measurement of heavy vehicles. This system features robust load cells, a durable platform, and advanced software that communicates seamlessly with a PC via serial communication, allowing for real-time data transfer and monitoring. The system enhances operational efficiency by providing precise weight readings and automated data logging, making it ideal for logistics, construction, and manufacturing applications where accurate weight measurement is critical.",
+        "images": [
+            "https://i.ibb.co/k4R8x8K/concrete-platform-weighbridge-500x500.jpg",
+            "https://i.ibb.co/q7nMkDN/Axle-Dual-Single-Z.jpg",
+            "https://i.ibb.co/Km4RssF/maxresdefault.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_002",
+        "name": "Displays",
+        "category": "WEIGHING",
+        "subcategory": "Weighing",
+        "description": "Displays in weighing systems are essential components that provide real-time visual output of weight measurements. These user-friendly interfaces often feature digital readouts, enabling operators to easily monitor and record weight data. High-quality displays enhance operational efficiency by ensuring accurate visibility of measurements, which is critical in industries such as logistics, manufacturing, and retail.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_003",
+        "name": "Indicators",
+        "category": "WEIGHING",
+        "subcategory": "Weighing",
+        "description": "Indicators are critical components in weighing systems that display precise weight measurements from various scales or sensors. They provide digital or analog outputs, with some models offering advanced features like serial communication and data logging for efficient integration with computer systems. These indicators ensure accurate and reliable data collection, essential for industries like automation, where precision is key in managing operations, similar to how your high-speed sorting system relies on seamless data flow for efficiency.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_004",
+        "name": "A-700",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/g3ccJYm/Whats-App-Image-2024-10-08-at-2-45-36-PM.jpg",
+            "https://i.ibb.co/WvJP7N0/Whats-App-Image-2024-10-08-at-2-45-38-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_005",
+        "name": "Bst-105,60",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/k6V6zD6/1534913498-main.jpg",
+            "https://i.ibb.co/k6V6zD6/1534913498-main.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_006",
+        "name": "Bst-106",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/86TSVkK/Whats-App-Image-2024-10-08-at-2-45-35-PM.jpg",
+            "https://i.ibb.co/yWqXnZq/Whats-App-Image-2024-10-08-at-2-45-37-PM.jpg",
+            "https://i.ibb.co/w07kJ0g/Whats-App-Image-2024-10-08-at-2-45-40-PM-1.jpg",
+            "https://i.ibb.co/S5C7rVQ/Whats-App-Image-2024-10-08-at-2-45-40-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_007",
+        "name": "Bst-68",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/3SKnwcX/pt20472331-high-anti-jamming-capability-weighing-scale-indicator-smart-load-batch-controller.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_008",
+        "name": "D-60",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/0Xq1sHQ/images.jpg",
+            "https://i.ibb.co/ryCDwWk/Whats-App-Image-2024-10-08-at-2-45-41-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_009",
+        "name": "D-850",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/Jv55HJS/D850.png"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_010",
+        "name": "D-900",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/TPskFtp/D900-LCD.png"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_011",
+        "name": "Lp-7516",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/sFY7nq7/Whats-App-Image-2024-10-08-at-2-45-36-PM-1.jpg",
+            "https://i.ibb.co/bJHVNhv/88fad17322a3867478b4ddce657c9468.webp",
+            "https://i.ibb.co/hRjjYkw/Whats-App-Image-2024-10-08-at-2-45-41-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_012",
+        "name": "Mi-711",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/bbFbyxK/Whats-App-Image-2024-10-08-at-2-45-34-PM.jpg",
+            "https://i.ibb.co/ZJTJg5s/Whats-App-Image-2024-10-08-at-2-45-39-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_013",
+        "name": "Mt-221W",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/sscg0td/Whats-App-Image-2024-10-08-at-2-45-35-PM-1.jpg",
+            "https://i.ibb.co/T8fZkh4/Whats-App-Image-2024-10-08-at-2-45-39-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_014",
+        "name": "Pf7E",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/rkQ1JyG/Whats-App-Image-2024-10-08-at-2-45-38-PM.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_015",
+        "name": "Swi-3000",
+        "category": "WEIGHING",
+        "subcategory": "Analog",
+        "description": "No description available.",
+        "images": [
+            "https://i.ibb.co/d68LzwT/Whats-App-Image-2024-10-08-at-2-45-37-PM-1.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_016",
+        "name": "Load Cells",
+        "category": "WEIGHING",
+        "subcategory": "Weighing",
+        "description": "A Load Cell is a transducer that converts mechanical force or weight into an electrical signal for precise weight measurement. Integral to weighing systems, load cells are designed to provide high accuracy and reliability, making them essential for various applications in industries such as manufacturing, logistics, and automotive. They come in various types, including shear beam, compression, and tension load cells, allowing for versatility in installation and use in different weighing scenarios.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_017",
+        "name": "Ball Type Load Cell",
+        "category": "WEIGHING",
+        "subcategory": "Load Cells",
+        "description": "A Ball Type Load Cell is a specific design of load cell that uses a spherical ball as the sensing element to measure weight or force. This type of load cell is known for its ability to handle multi-directional loads and is commonly used in applications where the load may not be perfectly aligned with the sensing axis. Its compact design and high accuracy make it ideal for various industries, including automotive, aerospace, and material testing. Ball type load cells are often used in scales, industrial weighing systems, and force measurement applications due to their durability and reliability.",
+        "images": [
+            "https://i.ibb.co/FVBZ4Yz/digital-cup-ball-loadcell.png"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_018",
+        "name": "Compression Load Cell",
+        "category": "WEIGHING",
+        "subcategory": "Load Cells",
+        "description": "A Compression Load Cell is a type of load cell designed to measure the force or weight applied through compression. This load cell typically consists of a cylindrical or disc-shaped body that deforms under load, generating a proportional electrical signal. Compression load cells are widely used in various applications, including industrial scales, material testing, and force measurement systems. Their robust construction and high accuracy make them ideal for measuring heavy loads, ensuring reliable performance in demanding environments. Additionally, they are often used in applications where space constraints are a consideration, due to their compact design.",
+        "images": [
+            "https://i.ibb.co/64j4y7y/tsf-baski-tip-kapak.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_019",
+        "name": "S-Type Load Cell",
+        "category": "WEIGHING",
+        "subcategory": "Load Cells",
+        "description": "An S-Type Load Cell is a versatile and highly accurate load cell designed to measure tensile and compressive forces. Shaped like the letter \"S,\" this load cell can be used in various applications, including tension measurement, hanging scales, and force testing. Its dual functionality allows it to handle both pulling and pushing loads, making it ideal for diverse industrial settings. S-Type load cells are known for their high sensitivity and reliability, providing precise weight measurements. Their durable construction ensures long-lasting performance, making them suitable for both static and dynamic weighing applications in industries such as manufacturing, aerospace, and material testing.",
+        "images": [
+            "https://i.ibb.co/bvYFHC9/images.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_020",
+        "name": "Shear Beam Load Cell",
+        "category": "WEIGHING",
+        "subcategory": "Load Cells",
+        "description": "A Shear Beam Load Cell is a widely used load cell design that measures weight or force by utilizing shear strain in a beam when a load is applied. Typically shaped like a rectangular beam, this load cell offers high accuracy and stability, making it suitable for various applications, including platform scales, industrial weighing systems, and batch processing. Shear beam load cells are known for their durability and resistance to lateral forces, which ensures reliable performance in demanding environments. Their design allows for easy installation and integration into existing weighing systems, making them a popular choice for industries requiring precise weight measurements.",
+        "images": [
+            "https://i.ibb.co/vhyDddz/Shear-Beam-Load-Cell.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_021",
+        "name": "Single Point Load Cells",
+        "category": "WEIGHING",
+        "subcategory": "Load Cells",
+        "description": "Single Point Load Cells are compact and versatile load cells designed to measure weight or force at a single point of application. Commonly used in bench scales, retail scales, and other small weighing systems, they feature a simple design that allows for easy installation and integration into various applications. Single point load cells provide accurate and reliable measurements, making them ideal for environments where space is limited. Their robust construction ensures durability, while their ability to handle off-center loads enhances their usability across a wide range of industries, including food processing, packaging, and laboratory settings.",
+        "images": [
+            "https://i.ibb.co/V25QtNC/T12-A-Single-Point.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_022",
+        "name": "Spare Components",
+        "category": "WEIGHING",
+        "subcategory": "Weighing",
+        "description": "No description available.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_023",
+        "name": "Dead Weight",
+        "category": "WEIGHING",
+        "subcategory": "Spare Components",
+        "description": "A Dead Weight is a precision weight used for calibrating and testing weighing instruments, ensuring their accuracy and reliability. It is designed to provide a known mass that can be applied to a scale or load cell for calibration purposes. Dead weights are typically made from high-density materials and come in various sizes, allowing for precise adjustments in a wide range of applications. They are essential tools in laboratories and industrial settings, helping maintain the accuracy of weighing systems and ensuring compliance with industry standards.",
+        "images": [
+            "https://i.ibb.co/sb726NW/Stainless-Steel-Dead-Weights-Pillow-Type-Calibration-Weights-20kg.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_024",
+        "name": "Iron Plates",
+        "category": "WEIGHING",
+        "subcategory": "Spare Components",
+        "description": "Iron Plates used for supporting load cells are sturdy, flat surfaces designed to provide stable and secure bases for load cell installations. These plates help distribute the load evenly, ensuring accurate weight measurements by minimizing any shifting or movement that could affect the load cell's performance. Typically made from high-quality steel, these iron plates are durable and resistant to deformation, making them ideal for heavy-duty applications in industrial settings. Their design often includes pre-drilled holes for easy installation and alignment with load cells, enhancing the overall reliability and effectiveness of weighing systems.",
+        "images": [
+            "https://i.ibb.co/3Wcyn6b/images-1.jpg",
+            "https://i.ibb.co/KNXdRbc/images-2.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_025",
+        "name": "Load Cell Connectors",
+        "category": "WEIGHING",
+        "subcategory": "Spare Components",
+        "description": "Load Cell Connectors are specialized electrical connectors designed to facilitate the secure and efficient connection between load cells and weighing indicators or data acquisition systems. These connectors ensure reliable signal transmission, allowing accurate weight measurements by minimizing noise and interference. Typically made from durable materials, they are engineered to withstand harsh environmental conditions, making them suitable for industrial applications. Load cell connectors come in various configurations and pin arrangements to match different load cell designs, ensuring compatibility and ease of installation in weighing systems.",
+        "images": [
+            "https://i.ibb.co/yfPJb1R/4-wire-6.jpg",
+            "https://i.ibb.co/wzyJHZV/images-3.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_026",
+        "name": "Platforms",
+        "category": "WEIGHING",
+        "subcategory": "Spare Components",
+        "description": "Platforms in the context of weighing systems refer to the flat surfaces or bases designed to support items being weighed. They are integral components of various types of scales, including floor scales, platform scales, and industrial scales. These platforms are typically constructed from durable materials such as steel or aluminum to ensure stability and longevity under heavy loads. They are designed to accommodate different sizes and shapes of objects, providing accurate weight measurements by ensuring even load distribution. Many platforms feature non-slip surfaces for safety and may include integration options for load cells to enhance functionality in industrial and commercial applications.",
+        "images": [
+            "https://i.ibb.co/tLCLWj8/download-1.jpg",
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/6YZ87zx/download.jpg",
+            "https://i.ibb.co/4SG4BJ0/electronic-platform-scale-500x500.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_027",
+        "name": "Rs232 Connectors",
+        "category": "WEIGHING",
+        "subcategory": "Spare Components",
+        "description": "RS232 Connectors are serial communication connectors used to transmit data between weighing instruments, such as scales and indicators, and external devices like computers, printers, or data loggers. Designed to provide reliable and stable connections, these connectors typically feature a standardized pin configuration, allowing for easy integration and compatibility with various devices. RS232 connectors are commonly used in industrial applications for data transfer, enabling users to collect, monitor, and analyze weight data efficiently. Their robust design ensures durability, making them suitable for demanding environments where consistent performance is essential.",
+        "images": [
+            "https://i.ibb.co/sKyJ4Ly/download-3.jpg",
+            "https://i.ibb.co/gTYWjvS/download-4.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_028",
+        "name": "Weighing Scales",
+        "category": "WEIGHING",
+        "subcategory": "Weighing",
+        "description": "Weighing Scales are precision instruments designed to measure the weight of objects with high accuracy. Available in various forms, such as digital, mechanical, and electronic scales, they cater to a wide range of applications across industries, including retail, manufacturing, and healthcare. Features may include load capacity, connectivity options, and user-friendly interfaces, making them essential tools for effective weight management and inventory control.",
+        "images": [],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_029",
+        "name": "Axle Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "An Axle Scale is a specialized weighing system designed to measure the weight of individual axles of vehicles, particularly useful for ensuring compliance with weight regulations in transportation. This scale typically features multiple platforms to accommodate vehicles of various sizes and is often used in truck weigh stations, logistics facilities, and construction sites. Axle scales provide accurate weight distribution data, helping to prevent overloads and improve safety on the road. With capabilities for portable or permanent installation, they are essential for efficient vehicle management and compliance with legal weight limits.",
+        "images": [
+            "https://i.ibb.co/qB0v9v8/download-5.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_030",
+        "name": "Complete Electronic Platform Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "The Complete Electronic Platform Scale is a highly accurate weighing system designed for a variety of applications, including industrial, commercial, and retail environments. Featuring a sturdy platform and advanced electronic components, this scale provides precise weight measurements and is often equipped with a digital display for easy reading. With capabilities such as tare functions, overload protection, and connectivity options for data transfer, it enhances operational efficiency in inventory management and logistics. Its durable construction ensures reliability, making it an essential tool for any setting that requires consistent and accurate weighing.",
+        "images": [
+            "https://i.ibb.co/tLCLWj8/download-1.jpg",
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/6YZ87zx/download.jpg",
+            "https://i.ibb.co/4SG4BJ0/electronic-platform-scale-500x500.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_031",
+        "name": "Counting Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "A Counting Scale is a specialized weighing instrument designed to accurately count large quantities of identical items, such as screws, bolts, or packaging materials. By determining the weight of a known sample quantity, these scales can calculate and display the total count of items on the platform. Ideal for manufacturing, inventory management, and retail, counting scales enhance efficiency by reducing manual counting time and minimizing errors. Many models come equipped with user-friendly interfaces, programmable settings, and data storage options, making them valuable tools for businesses that rely on precise inventory tracking.",
+        "images": [
+            "https://i.ibb.co/gTgbQLq/61px-Wq7a-Jx-L-AC-UF1000-1000-QL80.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_032",
+        "name": "Crane Hanging Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "A Crane Hanging Scale is a portable weighing device designed to measure the weight of heavy loads suspended from a crane or hoist. These scales feature a robust design with a hook or shackle for easy attachment to loads, providing accurate weight measurements in industrial settings. Equipped with digital displays, they often offer features such as overload protection, tare functions, and data logging for enhanced usability. Crane hanging scales are essential for safe lifting operations, ensuring precise weight tracking and compliance with safety regulations in warehouses, construction sites, and manufacturing facilities.",
+        "images": [
+            "https://i.ibb.co/kSC6KTs/OCSA.png"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_033",
+        "name": "Floor Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "A Floor Scale is a robust weighing device designed for measuring heavy items or large quantities of goods directly on the ground. These scales are typically built with a large, flat platform to accommodate pallets, containers, and machinery, making them ideal for warehouses, distribution centers, and manufacturing facilities. Floor scales are equipped with high-capacity load cells for accurate weight readings and often feature digital displays for easy monitoring. Their durable construction ensures reliability in industrial environments, contributing to efficient inventory management and material handling operations.",
+        "images": [
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_034",
+        "name": "General Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "A General Scale is a versatile weighing instrument suitable for a wide range of applications, from retail to home use. These scales are typically easy to operate and provide accurate weight measurements for various items, such as packages, food, or personal weight. With options for digital or mechanical displays, general scales are designed for everyday use, offering durability and reliability in both commercial and domestic settings. Their portability and user-friendly features make them an essential tool for both personal and business needs.",
+        "images": [
+            "https://i.ibb.co/W2r4yz2/download-2.jpg",
+            "https://i.ibb.co/pyvfmF7/images-4.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_035",
+        "name": "Lab Balance Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "A Lab Balance Scale is a high-precision weighing instrument designed for accurate measurement of small quantities of materials in laboratory settings. These scales feature advanced technology to provide precise weight readings, often with readability to the milligram or microgram level. Lab balances are essential for applications in research, pharmaceuticals, and quality control, where accurate measurement is critical. With user-friendly interfaces and features like tare functions and data logging, they enhance efficiency and reliability in laboratory operations.",
+        "images": [
+            "https://i.ibb.co/rGb75BZ/equipment-lab-balances-scales.png"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_036",
+        "name": "Pallet Scale",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "A Pallet Scale is a heavy-duty weighing platform designed to measure the weight of pallets and their contents. These scales are commonly used in warehouses, distribution centers, and manufacturing facilities to facilitate inventory management and shipping processes. Equipped with robust load cells, pallet scales provide accurate weight readings and are often designed for easy integration with forklifts or pallet jacks, enhancing operational efficiency and streamlining material handling tasks.",
+        "images": [
+            "https://i.ibb.co/cFb37b1/EPWL-800-800-whitespace.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_037",
+        "name": "Portable Weighing Pad",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "Portable Weighing Pads are lightweight, compact scales designed for easy transport and quick setup in various locations. Ideal for applications such as animal weighing, field measurements, and temporary job sites, these pads offer accurate weight readings while being convenient and user-friendly. Their durable construction and often wireless capabilities make them a practical choice for industries that require flexibility and mobility in their weighing processes.",
+        "images": [
+            "https://i.ibb.co/R4P9SZh/images.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    },
+    {
+        "id": "weighing_038",
+        "name": "Washdown Scales",
+        "category": "WEIGHING",
+        "subcategory": "Weighing Scales",
+        "description": "Washdown Scales are specialized weighing instruments designed for use in environments where cleanliness and hygiene are paramount, such as food processing, pharmaceuticals, and chemical industries. Built with corrosion-resistant materials and sealed against water and dust, these scales can be easily cleaned and sanitized. Their durability and accurate weight measurements make them ideal for applications requiring both precision and stringent sanitation standards.",
+        "images": [
+            "https://i.ibb.co/2h1MGvs/sw.jpg"
+        ],
+        "availability": true,
+        "createdAt": "2024-11-19T00:00:00Z",
+        "updatedAt": "2024-11-19T00:00:00Z",
+        "specifications": {
+            "modelNumber": null,
+            "capacity": null,
+            "heater": null,
+            "dimensions": null,
+            "inletSize": null,
+            "outletSize": null
+        },
+        "weight": {
+            "modelNumber": null,
+            "empty": null,
+            "operation": null,
+            "full": null
+        }
+    }
+]
