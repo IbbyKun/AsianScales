@@ -1,33 +1,72 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductFeatures from './productFeature';
 import Image from 'next/image';
 import placeholder from '../../public/assets/Images/Gallery1.jpg';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, useGLTF } from '@react-three/drei';
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
+
+const MODEL_MAPPINGS = {
+  'automatic_lpg_cylinder_filling_machine_(complete)': '/models/machine1.glb',
+  'automatic_lpg_cylinder_filling_machine_(double_nozzle)_(complete)': '/models/machine2.glb',
+  'automatic_lpg_dispensing_unit_(complete)': '/models/machine3.glb'
+};
+
+// Dynamically import the 3D components to avoid SSR issues
+const Model = dynamic(() => 
+  import('./Model').then((mod) => mod.default), 
+  { ssr: false }
+);
 
 // Component 1: Product Name, Description, and 3D Model
-const ProductOverview = ({ product }) => (
-  <div className="bg-white p-6 border-b border-gray-300 mt-20">
-    <div className="max-w-7xl mx-auto text-center">
-      {/* Breadcrumb */}
-      <div className="text-gray-500 mb-4 text-left">
-        Home {'>'} {product?.category || 'Category'} {'>'} {product?.name || 'Product Name'}
-      </div>
+const ProductOverview = ({ product }) => {
+  const [currentPath, setCurrentPath] = useState('');
 
-      {/* Product Title and Description */}
-      <h1 className="text-3xl md:text-5xl font-bold text-black">
-        {product?.name || 'Product Name'}
-      </h1>
-      <p className="mt-4 text-lg text-gray-600">
-        {product?.description || 'Product description goes here.'}
-      </p>
+  useEffect(() => {
+    // Get the path safely on client-side
+    setCurrentPath(window.location.pathname.substring(1));
+  }, []);
 
-      {/* 3D Model Mockup */}
-      <div className="mt-8 text-center">
-        <p className="text-sm">3D Mockup of product</p>
-        {/* Placeholder for the 3D model */}
+  const modelPath = MODEL_MAPPINGS[currentPath];
+
+  return (
+    <div className="bg-white p-6 border-b border-gray-300 mt-20">
+      <div className="max-w-7xl mx-auto text-center">
+        {/* Breadcrumb */}
+        <div className="text-gray-500 mb-4 text-left">
+          Home {'>'} {product?.category || 'Category'} {'>'} {product?.name || 'Product Name'}
+        </div>
+
+        {/* Product Title and Description */}
+        <h1 className="text-3xl md:text-5xl font-bold text-black">
+          {product?.name || 'Product Name'}
+        </h1>
+        <p className="mt-4 text-lg text-gray-600">
+          {product?.description || 'Product description goes here.'}
+        </p>
+
+        {/* 3D Model Section */}
+        <div className="mt-8 text-center">
+          {modelPath ? (
+            <div style={{ height: '400px' }}>
+              <Suspense fallback={<div>Loading 3D model...</div>}>
+                <Canvas camera={{ position: [0, 0, 5] }}>
+                  <ambientLight intensity={0.5} />
+                  <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                  <Model modelPath={modelPath} />
+                  <OrbitControls />
+                </Canvas>
+              </Suspense>
+            </div>
+          ) : (
+            <p className="text-sm text-gray-500">No 3D model available for this product</p>
+          )}
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 // Component 2: Features List and Product Image
 
@@ -109,15 +148,59 @@ const ProductWeight = ({ weight }) => (
 
 const ContactForm = ({ onClose }) => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    country: '',
+    countryCode: '',
+    phoneNo: '',
+    message: ''
+  });
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setShowSuccessModal(true);
+    
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setShowSuccessModal(true);
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          country: '',
+          countryCode: '',
+          phoneNo: '',
+          message: ''
+        });
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again later.');
+    }
   };
 
   const handleCloseSuccessModal = () => {
     setShowSuccessModal(false);
-    onClose();
+    onClose(); // Close the entire modal
   };
 
   return (
@@ -141,25 +224,39 @@ const ContactForm = ({ onClose }) => {
               <div className="mb-4">
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Name"
                   className="w-full p-2 text-black rounded"
+                  required
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Email"
                   className="w-full p-2 text-black rounded"
+                  required
                 />
               </div>
               <div className="mb-4 flex space-x-4">
                 <input
                   type="text"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
                   placeholder="Company"
                   className="w-1/2 p-2 text-black rounded"
                 />
                 <input
                   type="text"
+                  name="country"
+                  value={formData.country}
+                  onChange={handleChange}
                   placeholder="Country"
                   className="w-1/2 p-2 text-black rounded"
                 />
@@ -167,19 +264,29 @@ const ContactForm = ({ onClose }) => {
               <div className="mb-4 flex space-x-4">
                 <input
                   type="text"
+                  name="countryCode"
+                  value={formData.countryCode}
+                  onChange={handleChange}
                   placeholder="Country Code"
                   className="w-1/2 p-2 text-black rounded"
                 />
                 <input
                   type="text"
+                  name="phoneNo"
+                  value={formData.phoneNo}
+                  onChange={handleChange}
                   placeholder="Phone no."
                   className="w-1/2 p-2 text-black rounded"
                 />
               </div>
               <div className="mb-4">
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Your Message"
                   className="w-full p-2 h-20 text-black rounded"
+                  required
                 ></textarea>
               </div>
               <div className="text-center">
@@ -204,11 +311,7 @@ const ContactForm = ({ onClose }) => {
             <p className="mb-4">
               Thank you for reaching out to us. Your message has been submitted.
             </p>
-            <Image
-              src="path-to-email-icon"
-              alt="Email Icon"
-              className="w-16 h-16 mx-auto mb-4"
-            />
+            <div className="text-5xl mb-4">✅</div>
             <button
               onClick={handleCloseSuccessModal}
               className="bg-white text-black px-6 py-2 rounded"

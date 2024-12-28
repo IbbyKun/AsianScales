@@ -63,7 +63,7 @@ const ContactPage = () => {
         <Navbar />
         <div className="text-center p-10">
           <p className="text-xl text-red-500 font-semibold">Product not found</p>
-          <p className="text-gray-600">We couldn't find the product you're looking for. Please check the URL or try again later.</p>
+          <p className="text-gray-600">We couldn&apos;t find the product you&apos;re looking for. Please check the URL or try again later.</p>
         </div>
         <Footer />
       </div>

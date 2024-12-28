@@ -3,15 +3,17 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import {Suspense} from 'react';
 import { addBlog, fetchBlogById, updateBlog } from '../../../../../firebaseFunctions';
 import 'react-quill/dist/quill.snow.css';
+import Image from 'next/image';
 
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
-export default function AddBlog() {
+function BlogForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const editId = searchParams.get('edit'); // Get the blog ID for editing
+  const editId = searchParams.get('edit');
 
   const [blog, setBlog] = useState({
     title: '',
@@ -23,7 +25,6 @@ export default function AddBlog() {
 
   const [isImageLoading, setIsImageLoading] = useState(true);
 
-  // Fetch the blog data for editing if editId is present
   useEffect(() => {
     if (editId) {
       const getBlogData = async () => {
@@ -36,6 +37,7 @@ export default function AddBlog() {
     }
   }, [editId]);
 
+  // ... rest of your handlers remain the same ...
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setBlog({ ...blog, [name]: value });
@@ -61,7 +63,6 @@ export default function AddBlog() {
   const handleDone = async () => {
     let imageUrl = blog.coverImage;
 
-    // If there's a new image (File type), upload it to Cloudinary
     if (blog.coverImage && blog.coverImage instanceof File) {
       const data = new FormData();
       data.append('file', blog.coverImage);
@@ -79,14 +80,11 @@ export default function AddBlog() {
     const blogData = { ...blog, coverImage: imageUrl };
 
     if (editId) {
-      // If editing, update the existing blog
       await updateBlog(editId, blogData);
     } else {
-      // If adding, create a new blog
       await addBlog(blogData);
     }
 
-    // Redirect to the dashboard after saving the blog
     router.push('/admin/dashboard');
   };
 
@@ -96,7 +94,6 @@ export default function AddBlog() {
         {editId ? 'Edit Blog' : 'Add New Blog'}
       </h1>
       <div className="space-y-4 bg-white p-6 rounded shadow">
-        {/* Image Preview Container */}
         {blog.coverImage && !blog.coverImage instanceof File && (
           <div className="mb-4">
             {isImageLoading ? (
@@ -105,7 +102,7 @@ export default function AddBlog() {
               </div>
             ) : (
               <div className="w-full h-64 flex justify-center items-center">
-                <img
+                <Image
                   src={blog.coverImage}
                   alt="Cover Image"
                   className="w-full h-full object-cover rounded"
@@ -118,7 +115,6 @@ export default function AddBlog() {
           </div>
         )}
 
-        {/* Image input (allow replacing the image) */}
         <input
           type="file"
           accept="image/*"
@@ -173,5 +169,13 @@ export default function AddBlog() {
         </button>
       </div>
     </div>
+  );
+}
+
+export default function AddBlog() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <BlogForm />
+    </Suspense>
   );
 }

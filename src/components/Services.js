@@ -89,10 +89,9 @@ const ServicesPage = () => {
           OUR SERVICES
         </h1>
       </div>
-
       {services.map((service, index) => (
-        <div className="md:px-8">
-          <ServiceTile key={index} service={service} index={index} />
+        <div key={index} className="md:px-8">
+          <ServiceTile service={service} index={index} />
         </div>
       ))}
     </div>

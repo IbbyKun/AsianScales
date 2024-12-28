@@ -1,58 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeroSection from './Cover';
 import Image from 'next/image';
-
-export const blogPosts = [
-  {
-    id: 1,
-    slug: 'how-to-quickly-deploy-static-website',
-    category: 'Tutorial',
-    date: '14 days ago',
-    title: 'How to quickly deploy a static website',
-    description:
-      'Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.',
-    content: 'Full blog content goes here...',
-    image: '/assets/blog/deploy-static-website.jpg',
-    author: 'Jese Leos',
-    authorImage:
-      'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png',
-  },
-  {
-    id: 2,
-    category: 'Article',
-    date: '14 days ago',
-    title: 'Our first project with React',
-    description:
-      'Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.',
-    author: 'Bonnie Green',
-    authorImage:
-      'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png',
-  },
-  {
-    id: 3,
-    category: 'Guide',
-    date: '7 days ago',
-    title: 'Understanding React Hooks',
-    description:
-      'React Hooks are functions that let you use state and other React features without writing a class. Learn how to use them effectively.',
-    author: 'Alex Johnson',
-    authorImage:
-      'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/alex-johnson.png',
-  },
-  {
-    id: 4,
-    category: 'Tutorial',
-    date: '3 days ago',
-    title: 'Mastering CSS Grid Layout',
-    description:
-      'CSS Grid Layout is a powerful layout system available in CSS. Learn how to build complex layouts with ease using this technique.',
-    author: 'Emily Davis',
-    authorImage:
-      'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/emily-davis.png',
-  },
-];
+import { fetchBlogs } from '../../firebaseFunctions';
+import Link from 'next/link';
 
 const BlogSection = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const getBlogs = async () => {
+      const blogsData = await fetchBlogs();
+      setBlogs(blogsData);
+    };
+    getBlogs();
+  }, []);
+
   return (
     <div>
       <HeroSection
@@ -62,7 +24,7 @@ const BlogSection = () => {
       <section className="bg-white">
         <div className="py-8 px-8 mx-auto max-w-screen-xl lg:py-16 lg:px-8">
           <div className="grid gap-3 lg:grid-cols-2">
-            {blogPosts.map((post) => (
+            {blogs.map((post) => (
               <article
                 key={post.id}
                 className="group p-6 bg-white rounded-lg border border-gray-200 shadow-md transition-colors duration-300 hover:bg-gray-800"
@@ -84,27 +46,34 @@ const BlogSection = () => {
                   </span>
                 </div>
                 <h2 className="mb-2 text-4xl font-bold bebas-neue-regular text-gray-900 group-hover:text-white">
-                  <a href={`/blogs/${post.slug}`}>{post.title}</a>
+                  <Link href={`/blogs/${post.slug}`}>{post.title}</Link>
                 </h2>
-                <p className="mb-5 font-light text-gray-500 group-hover:text-white">
-                  {post.description}
-                </p>
+                <div 
+                  className="mb-5 font-light text-gray-500 group-hover:text-white"
+                  dangerouslySetInnerHTML={{ 
+                    __html: post.description
+                      .split(' ')
+                      .slice(0, 25)
+                      .join(' ')
+                      .concat(post.description.split(' ').length > 25 ? '...' : '')
+                  }}
+                />
                 <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-4">
-                    <Image
+                    {/* <Image
                       className="w-7 h-7 rounded-full"
                       src={post.authorImage}
                       alt={`${post.author} avatar`}
-                      width={7}
-                      height={7}
-                    />
+                      width={28}
+                      height={28}
+                    /> */}
                     <span className="font-medium group-hover:text-white">
                       {post.author}
                     </span>
                   </div>
-                  <a
+                  <Link
                     href={`/blogs/${post.slug}`}
-                    className="inline-flex items-center font-medium text-primary-600 hover:underline group-hover:text-white"
+                    className="inline-flex items-center text-black font-medium text-primary-600 hover:underline group-hover:text-white"
                   >
                     Read more
                     <svg
@@ -119,7 +88,7 @@ const BlogSection = () => {
                         clipRule="evenodd"
                       ></path>
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}

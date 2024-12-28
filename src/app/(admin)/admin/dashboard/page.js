@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { Suspense } from 'react';
 import { fetchBlogs, deleteBlog } from '../../../../../firebaseFunctions'; // Import the functions
 
 export default function Blogs() {
@@ -24,6 +25,7 @@ export default function Blogs() {
   };
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="flex justify-center text-8xl mt-16 mb-12 font-bold text-black">
         Blogs
@@ -69,6 +71,7 @@ export default function Blogs() {
           ))
         )}
       </div>
-    </div>
+      </div>
+      </Suspense>
   );
 }
