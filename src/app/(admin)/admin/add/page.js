@@ -3,7 +3,8 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import {Suspense} from 'react';
+import { Suspense } from 'react';
+import { auth } from '../../../../../firebase'; // Import Firebase auth
 import { addBlog, fetchBlogById, updateBlog } from '../../../../../firebaseFunctions';
 import 'react-quill/dist/quill.snow.css';
 import Image from 'next/image';
@@ -24,9 +25,23 @@ function BlogForm() {
   });
 
   const [isImageLoading, setIsImageLoading] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false); // State for authentication
 
+  // Check authentication on mount
   useEffect(() => {
-    if (editId) {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setIsAuthenticated(true);
+      } else {
+        router.push('/login'); // Redirect to login if not authenticated
+      }
+    });
+    return () => unsubscribe(); // Cleanup subscription
+  }, [router]);
+
+  // Fetch the blog data for editing if editId is present
+  useEffect(() => {
+    if (isAuthenticated && editId) {
       const getBlogData = async () => {
         const blogData = await fetchBlogById(editId);
         setBlog(blogData);
@@ -35,9 +50,8 @@ function BlogForm() {
 
       getBlogData();
     }
-  }, [editId]);
+  }, [editId, isAuthenticated]);
 
-  // ... rest of your handlers remain the same ...
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setBlog({ ...blog, [name]: value });
@@ -88,6 +102,10 @@ function BlogForm() {
     router.push('/admin/dashboard');
   };
 
+  if (!isAuthenticated) {
+    return <div>Loading...</div>; // Show loading screen during authentication check
+  }
+
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-2xl font-bold mb-8 text-black">
@@ -107,7 +125,7 @@ function BlogForm() {
                   alt="Cover Image"
                   className="w-full h-full object-cover rounded"
                   onLoad={handleImageLoad}
-                  onError={(e) => e.target.style.display = 'none'}
+                  onError={(e) => (e.target.style.display = 'none')}
                 />
               </div>
             )}
@@ -121,7 +139,7 @@ function BlogForm() {
           className="w-full p-2 border rounded text-gray-400"
           onChange={handleImageChange}
         />
-        
+
         <input
           type="text"
           name="title"
