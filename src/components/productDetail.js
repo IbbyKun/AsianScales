@@ -8,9 +8,18 @@ import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 
 const MODEL_MAPPINGS = {
-  'automatic_lpg_cylinder_filling_machine_(complete)': '/models/machine1.glb',
-  'automatic_lpg_cylinder_filling_machine_(double_nozzle)_(complete)': '/models/machine2.glb',
-  'automatic_lpg_dispensing_unit_(complete)': '/models/machine3.glb'
+  'automatic_lpg_cylinder_filling_machine_(complete)': {
+    path: '/models/machine1.glb',
+    cameraZ: -80
+  },
+  'automatic_lpg_cylinder_filling_machine_(double_nozzle)_(complete)': {
+    path: '/models/machine2.glb',
+    cameraZ: -80
+  },
+  'automatic_lpg_dispensing_unit_(complete)': {
+    path: '/models/machine3.glb',
+    cameraZ: -10
+  }
 };
 
 // Dynamically import the 3D components to avoid SSR issues
@@ -28,7 +37,9 @@ const ProductOverview = ({ product }) => {
     setCurrentPath(window.location.pathname.substring(1));
   }, []);
 
-  const modelPath = MODEL_MAPPINGS[currentPath];
+  const modelConfig = MODEL_MAPPINGS[currentPath];
+  const modelPath = modelConfig?.path;
+  const cameraZ = modelConfig?.cameraZ;
 
   return (
     <div className="bg-white p-6 border-b border-gray-300 mt-20">
@@ -51,11 +62,16 @@ const ProductOverview = ({ product }) => {
           {modelPath ? (
             <div style={{ height: '400px' }}>
               <Suspense fallback={<div>Loading 3D model...</div>}>
-                <Canvas camera={{ position: [0, 0, 5] }}>
+                <Canvas camera={{ position: [0, 0, cameraZ] }}>
                   <ambientLight intensity={0.5} />
                   <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
                   <Model modelPath={modelPath} />
-                  <OrbitControls />
+                  <OrbitControls 
+                    enablePan={false}
+                    enableZoom={true}
+                    minPolarAngle={Math.PI / 2}
+                    maxPolarAngle={Math.PI / 2}
+                  />
                 </Canvas>
               </Suspense>
             </div>
