@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
         {/* Product Description */}
         <p className="text-gray-600 text-sm mt-2">
           {product.description
-            ? product.description.split(' ').slice(0, 15).join(' ') + 
+            ? product.description.split(' ').slice(0, 15).join(' ') +
               (product.description.split(' ').length > 15 ? '...' : '')
             : 'No description available'}
         </p>
@@ -61,7 +61,7 @@ const ProductListing = ({ products = [] }) => {
       <div className="mb-4 text-sm text-gray-500">Home {'>'} Weighing</div>
 
       {/* Product Grid */}
-      <div className="px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="md:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

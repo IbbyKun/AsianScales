@@ -6,27 +6,27 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
+import Link from 'next/link';
 
 const MODEL_MAPPINGS = {
   'automatic_lpg_cylinder_filling_machine_(complete)': {
     path: '/models/machine1.glb',
-    cameraZ: -80
+    cameraZ: -80,
   },
   'automatic_lpg_cylinder_filling_machine_(double_nozzle)_(complete)': {
     path: '/models/machine2.glb',
-    cameraZ: -80
+    cameraZ: -80,
   },
   'automatic_lpg_dispensing_unit_(complete)': {
     path: '/models/machine3.glb',
-    cameraZ: -10
-  }
+    cameraZ: -10,
+  },
 };
 
 // Dynamically import the 3D components to avoid SSR issues
-const Model = dynamic(() => 
-  import('./Model').then((mod) => mod.default), 
-  { ssr: false }
-);
+const Model = dynamic(() => import('./Model').then((mod) => mod.default), {
+  ssr: false,
+});
 
 // Component 1: Product Name, Description, and 3D Model
 const ProductOverview = ({ product }) => {
@@ -46,7 +46,17 @@ const ProductOverview = ({ product }) => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Breadcrumb */}
         <div className="text-gray-500 mb-4 text-left">
-          Home {'>'} {product?.category || 'Category'} {'>'} {product?.name || 'Product Name'}
+          <Link href="/" className="hover:text-gray-700">
+            Home
+          </Link>{' '}
+          {'>'}{' '}
+          <Link
+            href={`/list/${product?.category?.toLowerCase()}`}
+            className="hover:text-gray-700"
+          >
+            {product?.category || 'Category'}
+          </Link>{' '}
+          {'>'} <span>{product?.name || 'Product Name'}</span>
         </div>
 
         {/* Product Title and Description */}
@@ -64,9 +74,13 @@ const ProductOverview = ({ product }) => {
               <Suspense fallback={<div>Loading 3D model...</div>}>
                 <Canvas camera={{ position: [0, 0, cameraZ] }}>
                   <ambientLight intensity={0.5} />
-                  <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                  <spotLight
+                    position={[10, 10, 10]}
+                    angle={0.15}
+                    penumbra={1}
+                  />
                   <Model modelPath={modelPath} />
-                  <OrbitControls 
+                  <OrbitControls
                     enablePan={false}
                     enableZoom={true}
                     minPolarAngle={Math.PI / 2}
@@ -76,7 +90,9 @@ const ProductOverview = ({ product }) => {
               </Suspense>
             </div>
           ) : (
-            <p className="text-sm text-gray-500">No 3D model available for this product</p>
+            <p className="text-sm text-gray-500">
+              No 3D model available for this product
+            </p>
           )}
         </div>
       </div>
@@ -171,26 +187,26 @@ const ContactForm = ({ onClose }) => {
     country: '',
     countryCode: '',
     phoneNo: '',
-    message: ''
+    message: '',
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -203,7 +219,7 @@ const ContactForm = ({ onClose }) => {
           country: '',
           countryCode: '',
           phoneNo: '',
-          message: ''
+          message: '',
         });
       } else {
         alert('Failed to send message. Please try again.');

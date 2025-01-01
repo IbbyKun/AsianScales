@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import { FaHome, FaProductHunt, FaBlogger, FaPhone } from 'react-icons/fa';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import Image from 'next/image'; 
+import Image from 'next/image';
 import logo from '../../public/assets/logos/logo.png';
-import DropdownMenu from '../components/Dropdown/Dropdown'; 
+import DropdownMenu from '../components/Dropdown/Dropdown';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
@@ -33,8 +33,10 @@ const Navbar = () => {
     <>
       {/* Dropdown positioned behind navbar */}
       {isDropdownOpen && (
-        <div className="fixed top-0 left-0 right-0 bg-[#0B1C3D] border-t border-gray-700 shadow-lg z-[40] animate-slideDown" 
-             style={{ width: '100vw' }}>
+        <div
+          className="fixed top-0 left-0 right-0 bg-[#0B1C3D] border-t border-gray-700 shadow-lg z-[40] animate-slideDown"
+          style={{ width: '100vw' }}
+        >
           <div className="max-w-7xl mx-auto p-12 pt-24">
             {/* Animated Logo in Dropdown */}
             <div className="absolute left-24 top-28 scale-150 transition-all duration-300">
@@ -46,28 +48,50 @@ const Navbar = () => {
                 width={70}
               />
             </div>
-            
+
             {/* Grid Content */}
             <div className="grid grid-cols-3 gap-8 ml-48">
               <div>
-                <h3 className="font-bold text-lg mb-4 text-white">Product Categories</h3>
+                <h3 className="font-bold text-lg mb-4 text-white">
+                  Product Categories
+                </h3>
                 <ul className="space-y-2">
-                  <li><Link href="/list/weighing" className="hover:text-gray-400 cursor-pointer">Weighing</Link></li>
-                  <li><Link href="/list/gas" className="hover:text-gray-400 cursor-pointer">Gas Equipment</Link></li>
+                  <li>
+                    <Link
+                      href="/list/weighing"
+                      className="text-white hover:text-gray-400 cursor-pointer"
+                    >
+                      Weighing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/list/gas"
+                      className="text-white hover:text-gray-400 cursor-pointer"
+                    >
+                      Gas Equipment
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-bold text-lg mb-4 text-white">Our Trending Products</h3>
+                <h3 className="font-bold text-lg mb-4 text-white">
+                  Our Trending Products
+                </h3>
                 <ul className="space-y-2">
-                  <li 
-                    onClick={() => router.push('/automatic_lpg_cylinder_filling_machine_(complete)')}
-                    className="hover:text-gray-400 cursor-pointer"
+                  <li
+                    onClick={() =>
+                      router.push(
+                        '/automatic_lpg_cylinder_filling_machine_(complete)'
+                      )
+                    }
+                    className="text-white hover:text-gray-400 cursor-pointer"
                   >
                     LPG Filling Machine
                   </li>
-                  <li 
+                  <li
                     onClick={() => router.push('/pallet_scale')}
-                    className="hover:text-gray-400 cursor-pointer"
+                    className="text-white hover:text-gray-400 cursor-pointer"
                   >
                     Floor and Pallet Scales
                   </li>
@@ -76,21 +100,21 @@ const Navbar = () => {
               <div>
                 <h3 className="font-bold text-lg mb-4 text-white">Services</h3>
                 <ul className="space-y-2">
-                  <li 
+                  <li
                     onClick={() => router.push('/services/automation')}
-                    className="hover:text-gray-400 cursor-pointer"
+                    className="text-white hover:text-gray-400 cursor-pointer"
                   >
                     Automation
                   </li>
-                  <li 
+                  <li
                     onClick={() => router.push('/services/weighing')}
-                    className="hover:text-gray-400 cursor-pointer"
+                    className="text-white hover:text-gray-400 cursor-pointer"
                   >
                     Weighing
                   </li>
-                  <li 
+                  <li
                     onClick={() => router.push('/services/trading')}
-                    className="hover:text-gray-400 cursor-pointer"
+                    className="text-white hover:text-gray-400 cursor-pointer"
                   >
                     Trading
                   </li>
@@ -126,10 +150,7 @@ const Navbar = () => {
                 <span>Home</span>
               </Link>
 
-              <div
-                className="relative group"
-                onClick={toggleDropdown}
-              >
+              <div className="relative group" onClick={toggleDropdown}>
                 <Link
                   href="#"
                   className="flex items-center space-x-2 hover:text-gray-400"
@@ -177,7 +198,7 @@ const Navbar = () => {
                 <FaHome />
                 <span>Home</span>
               </Link>
-              
+
               <button
                 onClick={toggleDropdown}
                 className="flex items-center space-x-2 hover:text-gray-400 w-full"
@@ -190,30 +211,46 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <div className="pl-4 space-y-4 border-l border-gray-700">
                   <div>
-                    <h3 className="font-bold mb-2 text-sm">Product Categories</h3>
+                    <h3 className="font-bold mb-2 text-sm text-white">
+                      Product Categories
+                    </h3>
                     <ul className="space-y-2">
                       <li>
-                        <Link href="/list/weighing" className="hover:text-gray-400">
+                        <Link
+                          href="/list/weighing"
+                          className="text-white hover:text-gray-400"
+                        >
                           Weighing
                         </Link>
                       </li>
                       <li>
-                        <Link href="/list/gas" className="hover:text-gray-400">
+                        <Link
+                          href="/list/gas"
+                          className="text-white hover:text-gray-400"
+                        >
                           Gas Equipment
                         </Link>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="font-bold mb-2 text-sm">Trending Products</h3>
+                    <h3 className="font-bold mb-2 text-sm text-white">
+                      Trending Products
+                    </h3>
                     <ul className="space-y-2">
                       <li>
-                        <Link href="/automatic_lpg_cylinder_filling_machine_(complete)" className="hover:text-gray-400">
+                        <Link
+                          href="/automatic_lpg_cylinder_filling_machine_(complete)"
+                          className="text-white hover:text-gray-400"
+                        >
                           LPG Filling Machine
                         </Link>
                       </li>
                       <li>
-                        <Link href="/pallet_scale" className="hover:text-gray-400">
+                        <Link
+                          href="/pallet_scale"
+                          className="text-white hover:text-gray-400"
+                        >
                           Floor and Pallet Scales
                         </Link>
                       </li>
@@ -221,20 +258,31 @@ const Navbar = () => {
                   </div>
 
                   <div>
-                    <h3 className="font-bold mb-2 text-sm">Services</h3>
+                    <h3 className="font-bold mb-2 text-sm text-white">
+                      Services
+                    </h3>
                     <ul className="space-y-2">
                       <li>
-                        <Link href="/services/automation" className="hover:text-gray-400">
+                        <Link
+                          href="/services/automation"
+                          className="text-white hover:text-gray-400"
+                        >
                           Automation
                         </Link>
                       </li>
                       <li>
-                        <Link href="/services/weighing" className="hover:text-gray-400">
+                        <Link
+                          href="/services/weighing"
+                          className="text-white hover:text-gray-400"
+                        >
                           Weighing
                         </Link>
                       </li>
                       <li>
-                        <Link href="/services/trading" className="hover:text-gray-400">
+                        <Link
+                          href="/services/trading"
+                          className="text-white hover:text-gray-400"
+                        >
                           Trading
                         </Link>
                       </li>
@@ -250,7 +298,7 @@ const Navbar = () => {
                 <FaBlogger />
                 <span>Blogs</span>
               </Link>
-              
+
               <Link
                 href="/contact"
                 className="flex items-center space-x-2 hover:text-gray-400"

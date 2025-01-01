@@ -13,10 +13,12 @@ const TrendingProducts = ({ subtitle }) => {
     const loadProducts = async () => {
       const allProducts = await fetchProducts();
       // Filter for the two specific products we want to show
-      const trendingProducts = allProducts.filter(product => {
+      const trendingProducts = allProducts.filter((product) => {
         const slugName = product.name.toLowerCase().replace(/\s+/g, '_');
-        return slugName === 'automatic_lpg_cylinder_filling_machine_(complete)' ||
-               slugName === 'pallet_scale';
+        return (
+          slugName === 'automatic_lpg_cylinder_filling_machine_(complete)' ||
+          slugName === 'pallet_scale'
+        );
       });
       setProducts(trendingProducts);
     };
@@ -48,7 +50,7 @@ const TrendingProducts = ({ subtitle }) => {
             <Image
               src={product.images[0] || '/assets/images/placeholder.jpg'}
               alt={product.name}
-              className="w-full h-72 object-cover rounded-t-lg"
+              className="w-full h-72 object-contain rounded-t-lg"
               width={800}
               height={300}
             />
@@ -61,7 +63,7 @@ const TrendingProducts = ({ subtitle }) => {
               <div className="flex flex-col justify-between">
                 <p className="text-sm mt-12">{product.description}</p>
                 <div className="flex justify-end mt-12 space-x-4">
-                  <button 
+                  <button
                     className="bg-white text-blue-600 font-semibold px-4 py-2 rounded-md"
                     onClick={() => handleDetailsClick(product)}
                   >
