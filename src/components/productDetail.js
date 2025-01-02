@@ -85,6 +85,8 @@ const ProductOverview = ({ product }) => {
                     enableZoom={true}
                     minPolarAngle={Math.PI / 2}
                     maxPolarAngle={Math.PI / 2}
+                    minDistance={40}
+                    maxDistance={120}
                   />
                 </Canvas>
               </Suspense>
