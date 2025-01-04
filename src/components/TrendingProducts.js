@@ -54,22 +54,27 @@ const TrendingProducts = ({ subtitle }) => {
               width={800}
               height={300}
             />
-            <div className="grid grid-cols-2 gap-4 bg-customBlue text-white p-6 rounded-b-lg">
-              <div className="flex flex-col md:justify-center justify-start mt-9 md:mt-0">
-                <h2 className="text-4xl md:text-6xl mt-4 font-bold">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bg-customBlue text-white p-4 md:p-6 rounded-b-lg">
+              <div className="flex flex-col justify-center">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center md:text-left">
                   {product.name}
                 </h2>
               </div>
-              <div className="flex flex-col justify-between">
-                <p className="text-sm mt-12">{product.description}</p>
-                <div className="flex justify-end mt-12 space-x-4">
+              <div className="flex flex-col justify-between space-y-4 md:space-y-0">
+                <p className="text-sm md:text-base text-center md:text-left mt-2 md:mt-12">
+                  {product.description}
+                </p>
+                
+                <div className="flex justify-center md:justify-end space-x-4 mt-4 md:mt-12">
                   <button
-                    className="bg-white text-blue-600 font-semibold px-4 py-2 rounded-md"
+                    className="bg-white text-blue-600 font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base"
                     onClick={() => handleDetailsClick(product)}
                   >
                     Details
                   </button>
-                  <button className="bg-white text-blue-600 font-semibold px-4 py-2 rounded-md">
+                  <button 
+                    className="bg-white text-blue-600 font-semibold px-3 py-1.5 md:px-4 md:py-2 rounded-md text-sm md:text-base"
+                  >
                     List
                   </button>
                 </div>

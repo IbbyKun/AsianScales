@@ -32,17 +32,47 @@ export const fetchProducts = async () => {
 
 // Function to add a new blog
 export const addBlog = async (blogData) => {
-  const db = getDatabase(app); // Get database reference
-  const blogId = new Date().getTime(); // Use current timestamp as unique ID for blog post
-  const blogRef = ref(db, "blogs/" + blogId); // Reference to the "blogs" node in Firebase
+  const db = getDatabase(app);
+  const blogId = new Date().getTime();
+  const blogRef = ref(db, "blogs/" + blogId);
+
+  // Add SEO-friendly fields
+  const enhancedBlogData = {
+    ...blogData,
+    date: new Date().toISOString(),
+    lastModified: new Date().toISOString(),
+    metaTitle: blogData.metaTitle || blogData.title,
+    metaDescription: blogData.metaDescription || blogData.description?.replace(/<[^>]*>/g, '').slice(0, 155),
+    keywords: blogData.keywords || generateKeywords(blogData.title, blogData.category),
+    readingTime: blogData.readingTime || calculateReadingTime(blogData.description),
+    author: blogData.author || 'Asian Scales Team',
+    excerpt: blogData.description?.replace(/<[^>]*>/g, '').slice(0, 155),
+  };
 
   try {
-    await set(blogRef, blogData); // Save the blog data to Firebase
+    await set(blogRef, enhancedBlogData);
     console.log("Blog successfully added");
   } catch (error) {
     console.error("Error adding blog:", error);
   }
 };
+
+// Helper functions
+const calculateReadingTime = (content) => {
+  const wordsPerMinute = 200;
+  const words = content?.replace(/<[^>]*>/g, '').split(/\s+/).length || 0;
+  return Math.ceil(words / wordsPerMinute);
+};
+
+const generateKeywords = (title, category) => {
+  const keywords = new Set();
+  keywords.add(category.toLowerCase());
+  title.toLowerCase().split(' ').forEach(word => {
+    if (word.length > 3) keywords.add(word);
+  });
+  return Array.from(keywords);
+};
+
 // Function to fetch all blogs
 export const fetchBlogs = async () => {
   const db = getDatabase(app);

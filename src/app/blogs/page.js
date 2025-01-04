@@ -1,18 +1,29 @@
-'use client';
-
 import React from 'react';
+import { Metadata } from 'next';
+import { fetchBlogs } from '../../../firebaseFunctions';
 import Navbar from '../../components/Navbar';
-import BlogComponent from '../../components/OurBlogs'; // New component
+import BlogComponent from '../../components/OurBlogs';
 import Footer from '../../components/Footer';
 
-const BlogsPage = () => {
-  return (
-    <div>
-      <Navbar />
-      <BlogComponent />
-      <Footer />
-    </div>
-  );
+export const metadata = {
+  title: 'Asian Scales Blog',
+  description: 'Discover insights about weighing, automation, and trading solutions',
+  openGraph: {
+    title: 'Asian Scales Blog',
+    description: 'Discover insights about weighing, automation, and trading solutions',
+    type: 'website',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  },
 };
 
-export default BlogsPage;
+export default async function BlogsPage() {
+  const blogs = await fetchBlogs();
+
+  return (
+    <>
+      <Navbar />
+      <BlogComponent initialBlogs={blogs} />
+      <Footer />
+    </>
+  );
+}
