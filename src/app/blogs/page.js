@@ -5,21 +5,19 @@ import Navbar from '../../components/Navbar';
 import BlogComponent from '../../components/OurBlogs';
 import Footer from '../../components/Footer';
 
-/** @returns {Promise<Metadata>} */
-export async function generateMetadata() {
-  return {
+export const metadata = {
+  title: 'Asian Scales Blog',
+  description: 'Discover insights about weighing, automation, and trading solutions',
+  openGraph: {
     title: 'Asian Scales Blog',
     description: 'Discover insights about weighing, automation, and trading solutions',
-    openGraph: {
-      title: 'Asian Scales Blog',
-      description: 'Discover insights about weighing, automation, and trading solutions',
-      type: 'website',
-    },
-  };
-}
+    type: 'website',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  },
+};
 
 export default async function BlogsPage() {
-  const blogs = await fetchBlogs(); // Server-side fetch
+  const blogs = await fetchBlogs();
 
   return (
     <>
