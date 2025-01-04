@@ -1,20 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import HeroSection from './Cover';
-import Image from 'next/image';
-import { fetchBlogs } from '../../firebaseFunctions';
 import Link from 'next/link';
 
-const BlogSection = () => {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    const getBlogs = async () => {
-      const blogsData = await fetchBlogs();
-      setBlogs(blogsData);
-    };
-    getBlogs();
-  }, []);
-
+const BlogSection = ({ initialBlogs = [] }) => {
   return (
     <div>
       <HeroSection
@@ -22,15 +10,40 @@ const BlogSection = () => {
         subtitle="All our Blogs are assembled here below"
       />
       <section className="bg-white">
-        <div className="py-8 px-8 mx-auto max-w-screen-xl lg:py-16 lg:px-8">
-          <div className="grid gap-3 lg:grid-cols-2">
-            {blogs.map((post) => (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Blog",
+              "name": "Asian Scales Blog",
+              "description": "Discover insightful articles about scales, measurements, and industry insights",
+              "blogPost": initialBlogs.map(post => ({
+                "@type": "BlogPosting",
+                "headline": post.metaTitle || post.title,
+                "image": post.coverImage,
+                "datePublished": post.date,
+                "dateModified": post.lastModified,
+                "author": {
+                  "@type": "Person",
+                  "name": post.author
+                },
+                "keywords": post.keywords,
+                "description": post.metaDescription || post.description?.replace(/<[^>]*>/g, '').slice(0, 155),
+                "timeRequired": post.readingTime
+              }))
+            })
+          }}
+        />
+        <div className="py-4 sm:py-8 px-4 sm:px-8 mx-auto max-w-screen-xl lg:py-16 lg:px-8">
+          <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 lg:grid-cols-2">
+            {initialBlogs.map((post) => (
               <article
                 key={post.id}
-                className="group p-6 bg-white rounded-lg border border-gray-200 shadow-md transition-colors duration-300 hover:bg-gray-800"
+                className="group p-4 sm:p-6 bg-white rounded-lg border border-gray-200 shadow-md transition-colors duration-300 hover:bg-gray-800"
               >
-                <div className="flex justify-between items-center mb-5 text-gray-500 group-hover:text-white">
-                  <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded group-hover:bg-primary-200 group-hover:text-primary-800">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3 sm:mb-5 text-gray-500 group-hover:text-white">
+                  <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded group-hover:bg-primary-200 group-hover:text-primary-800 mb-2 sm:mb-0">
                     <svg
                       className="mr-1 w-3 h-3"
                       fill="currentColor"
@@ -45,11 +58,13 @@ const BlogSection = () => {
                     {post.date}
                   </span>
                 </div>
-                <h2 className="mb-2 text-4xl font-bold bebas-neue-regular text-gray-900 group-hover:text-white">
-                  <Link href={`/blogs/${post.slug}`}>{post.title}</Link>
+                <h2 className="mb-2 text-2xl sm:text-3xl lg:text-4xl font-bold bebas-neue-regular text-gray-900 group-hover:text-white">
+                  <Link href={`/blogs/${post.slug}`} className="hover:underline">
+                    {post.title}
+                  </Link>
                 </h2>
                 <div 
-                  className="mb-5 font-light text-gray-500 group-hover:text-white"
+                  className="mb-3 sm:mb-5 font-light text-sm sm:text-base text-gray-500 group-hover:text-white line-clamp-3 sm:line-clamp-none"
                   dangerouslySetInnerHTML={{ 
                     __html: post.description
                       .split(' ')
@@ -58,26 +73,19 @@ const BlogSection = () => {
                       .concat(post.description.split(' ').length > 25 ? '...' : '')
                   }}
                 />
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center space-x-4">
-                    {/* <Image
-                      className="w-7 h-7 rounded-full"
-                      src={post.authorImage}
-                      alt={`${post.author} avatar`}
-                      width={28}
-                      height={28}
-                    /> */}
-                    <span className="font-medium group-hover:text-white">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+                  <div className="flex items-center space-x-2 sm:space-x-4">
+                    <span className="font-medium text-sm sm:text-base group-hover:text-white">
                       {post.author}
                     </span>
                   </div>
                   <Link
                     href={`/blogs/${post.slug}`}
-                    className="inline-flex items-center text-black font-medium text-primary-600 hover:underline group-hover:text-white"
+                    className="inline-flex items-center text-sm sm:text-base text-black font-medium text-primary-600 hover:underline group-hover:text-white"
                   >
                     Read more
                     <svg
-                      className="ml-2 w-4 h-4"
+                      className="ml-1 sm:ml-2 w-3 h-3 sm:w-4 sm:h-4"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg"

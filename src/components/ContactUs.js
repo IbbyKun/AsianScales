@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from '../../public/assets/Images/Gallery1.jpg'; // Import the image properly
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -10,14 +9,43 @@ const ContactUs = () => {
     country: '',
     countryCode: '',
     phoneNo: '',
-    message: ''
+    message: '',
+    customCategory: ''
   });
 
+  const [showCustomCategory, setShowCustomCategory] = useState(false);
+
+  const categories = [
+    'Oil & Gas Exploration',
+    'Drilling Operations',
+    'Reservoir Engineering',
+    'Production Engineering',
+    'Pipeline Management',
+    'Refinery Operations',
+    'Petrochemicals',
+    'HSE in Oil & Gas',
+    'Offshore Operations',
+    'Well Services',
+    'Other'
+  ];
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    
+    if (name === 'category') {
+      setShowCustomCategory(value === 'Other');
+      setFormData({
+        ...formData,
+        [name]: value,
+        customCategory: value === 'Other' ? '' : formData.customCategory
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+        ...(name === 'customCategory' && { category: value })
+      });
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -43,8 +71,10 @@ const ContactUs = () => {
           country: '',
           countryCode: '',
           phoneNo: '',
-          message: ''
+          message: '',
+          customCategory: ''
         });
+        setShowCustomCategory(false);
       } else {
         alert('Failed to send message. Please try again.');
       }
@@ -56,18 +86,18 @@ const ContactUs = () => {
 
   return (
     <div className="relative max-w-full py-10 lg:py-14 mx-auto bg-white">
-      {/* Background Image */}
+      {/* Background Image - adjust padding for mobile */}
       <div
-        className="absolute inset-0 h-1/2 md:h-full bg-no-repeat"
+        className="absolute inset-0 h-1/2 md:h-full bg-no-repeat px-4"
         style={{
           backgroundImage: `url('/assets/Images/Gallery1.jpg')`,
           height: '70vh',
           backgroundBlendMode: 'overlay',
           backgroundSize: 'cover',
           backgroundColor: 'rgba(11, 28, 61, 0.8)',
-        }} // Apply the imported image as background
+        }}
       >
-        <p className="mt-24 text-center bebas-neue-regular text-white text-8xl">
+        <p className="mt-24 text-center bebas-neue-regular text-white text-4xl md:text-6xl lg:text-8xl">
           Contact us
         </p>
         <p className="mt-4 text-center font-century-gothic text-lightGray">
@@ -79,8 +109,9 @@ const ContactUs = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-2xl mx-auto mt-60">
-        <form onSubmit={handleSubmit} className="bg-[#0B1C3D] p-8 rounded-lg shadow-md">
+      {/* Form container - adjust padding and width for mobile */}
+      <div className="relative z-10 max-w-2xl mx-auto mt-60 px-4 sm:px-6 lg:px-8">
+        <form onSubmit={handleSubmit} className="bg-[#0B1C3D] p-4 sm:p-8 rounded-lg shadow-md">
           {/* Name */}
           <div className="mb-2">
             <input
@@ -109,19 +140,39 @@ const ContactUs = () => {
 
           {/* Category */}
           <div className="mb-2">
-            <input
-              type="text"
+            <select
               name="category"
               value={formData.category}
               onChange={handleChange}
-              placeholder="Category"
               className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
               required
-            />
+            >
+              <option value="">Select Category</option>
+              {categories.map((cat) => (
+                <option key={cat} value={cat}>
+                  {cat}
+                </option>
+              ))}
+            </select>
           </div>
 
+          {/* Add this conditional render for custom category input */}
+          {showCustomCategory && (
+            <div className="mb-2">
+              <input
+                type="text"
+                name="customCategory"
+                value={formData.customCategory}
+                onChange={handleChange}
+                placeholder="Enter your category"
+                className="w-full text-black px-4 py-2 rounded bg-white focus:outline-none"
+                required
+              />
+            </div>
+          )}
+
           {/* Company and Country */}
-          <div className="mb-2 flex gap-4">
+          <div className="mb-2 flex flex-col sm:flex-row gap-4">
             <input
               type="text"
               name="company"
@@ -143,7 +194,7 @@ const ContactUs = () => {
           </div>
 
           {/* Country Code and Phone No */}
-          <div className="mb-2 flex gap-4">
+          <div className="mb-2 flex flex-col sm:flex-row gap-4">
             <input
               type="text"
               name="countryCode"
@@ -189,8 +240,8 @@ const ContactUs = () => {
         </form>
       </div>
 
-      <div className="relative z-10 mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8 bg-[#0B1C3D]">
-        {/* Icon Block */}
+      {/* <div className="relative z-10 mt-12 grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 lg:gap-8 bg-[#0B1C3D] mx-4 sm:mx-6 lg:mx-8">
+        
         <a
           className="group flex flex-col h-full text-center rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10"
           href="#"
@@ -223,9 +274,9 @@ const ContactUs = () => {
             </p>
           </div>
         </a>
-        {/* End Icon Block */}
+        
 
-        {/* Icon Block */}
+        
         <a
           className="group flex flex-col h-full text-center rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10"
           href="#"
@@ -257,9 +308,9 @@ const ContactUs = () => {
             </p>
           </div>
         </a>
-        {/* End Icon Block */}
+        
 
-        {/* Icon Block */}
+        
         <a
           className="group flex flex-col h-full text-center rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 p-4 sm:p-6 dark:hover:bg-neutral-500/10 dark:focus:bg-neutral-500/10"
           href="#"
@@ -292,8 +343,8 @@ const ContactUs = () => {
             </p>
           </div>
         </a>
-        {/* End Icon Block */}
-      </div>
+
+      </div> */}
     </div>
   );
 };

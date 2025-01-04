@@ -33,21 +33,22 @@ const ServiceTile = ({ service, index }) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className="relative w-full h-64 md:h-80 overflow-hidden flex">
-      {isEven ? (
-        <div className="w-1/2 relative">
-          <Image
-            src={service.image}
-            alt={service.title}
-            className="w-full h-full object-cover absolute"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-      ) : null}
+    <div className="relative w-full flex flex-col sm:flex-row h-auto sm:h-64 md:h-80 overflow-hidden">
+      {/* Image Section - Show on left for even indexes on desktop, hidden for odd */}
+      <div className={`w-full sm:w-1/2 h-48 sm:h-full relative ${!isEven ? 'sm:order-2' : ''}`}>
+        <Image
+          src={service.image}
+          alt={service.title}
+          className="w-full h-full object-cover absolute"
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
+      </div>
 
+      {/* Content Section - Show on right for even indexes on desktop, left for odd */}
       <div
-        className={`relative w-1/2 flex items-center ${service.color} md:p-8 p-4`}
+        className={`relative w-full sm:w-1/2 flex items-center ${service.color} p-6 sm:p-8 ${!isEven ? 'sm:order-1' : ''}`}
         style={{
           backgroundImage: `url(${service.image.src})`,
           backgroundBlendMode: 'overlay',
@@ -56,44 +57,36 @@ const ServiceTile = ({ service, index }) => {
       >
         <div className="relative z-10 text-white">
           <Link href={`/services/${service.title.toLowerCase()}`}>
-            <h2 className="text-3xl font-bold mb-2 transition-transform duration-300 group-hover:scale-105 hover:underline relative inline-block group">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-2 transition-transform duration-300 group-hover:scale-105 hover:underline relative inline-block group">
               {service.title}
             </h2>
           </Link>
-          <p>{service.description}</p>
+          <p className="text-sm sm:text-base line-clamp-4 sm:line-clamp-none">
+            {service.description}
+          </p>
         </div>
 
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
-
-      {!isEven ? (
-        <div className="w-1/2 relative">
-          <Image
-            src={service.image}
-            alt={service.title}
-            className="w-full h-full object-cover absolute"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-      ) : null}
     </div>
   );
 };
 
 const ServicesPage = () => {
   return (
-    <div className="max-w-full mx-auto p-6 bg-white">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-black">
+    <div className="max-w-full mx-auto p-4 sm:p-6 bg-white">
+      <div className="text-center mb-6 sm:mb-8">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black">
           OUR SERVICES
         </h1>
       </div>
-      {services.map((service, index) => (
-        <div key={index} className="md:px-8">
-          <ServiceTile service={service} index={index} />
-        </div>
-      ))}
+      <div className="space-y-4 sm:space-y-0">
+        {services.map((service, index) => (
+          <div key={index} className="md:px-8">
+            <ServiceTile service={service} index={index} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -22,6 +22,11 @@ function BlogForm() {
     description: '',
     coverImage: null,
     slug: '',
+    metaTitle: '',
+    metaDescription: '',
+    keywords: '',
+    author: '',
+    readingTime: '',
   });
 
   const [isImageLoading, setIsImageLoading] = useState(true);
@@ -185,6 +190,55 @@ function BlogForm() {
         >
           Done
         </button>
+      </div>
+
+      <div className="mt-8 space-y-4 bg-white p-6 rounded shadow">
+        <h2 className="text-xl font-bold mb-4 text-black">SEO Settings</h2>
+        
+        <input
+          type="text"
+          name="metaTitle"
+          placeholder="Meta Title (if different from post title)"
+          className="w-full p-2 border rounded text-black"
+          value={blog.metaTitle}
+          onChange={handleInputChange}
+        />
+        
+        <textarea
+          name="metaDescription"
+          placeholder="Meta Description (150-160 characters recommended)"
+          className="w-full p-2 border rounded text-black h-24"
+          value={blog.metaDescription}
+          onChange={handleInputChange}
+          maxLength="160"
+        />
+        
+        <input
+          type="text"
+          name="keywords"
+          placeholder="Keywords (comma-separated)"
+          className="w-full p-2 border rounded text-black"
+          value={blog.keywords}
+          onChange={handleInputChange}
+        />
+        
+        <input
+          type="text"
+          name="author"
+          placeholder="Author Name"
+          className="w-full p-2 border rounded text-black"
+          value={blog.author}
+          onChange={handleInputChange}
+        />
+        
+        <input
+          type="text"
+          name="readingTime"
+          placeholder="Reading Time (e.g., '5 min read')"
+          className="w-full p-2 border rounded text-black"
+          value={blog.readingTime}
+          onChange={handleInputChange}
+        />
       </div>
     </div>
   );

@@ -1,9 +1,49 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: '', message: '' });
+
+    try {
+      const response = await fetch('/api/subscribe-newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setStatus({
+          type: 'success',
+          message: 'Thank you for subscribing!',
+        });
+        setEmail('');
+      } else {
+        setStatus({
+          type: 'error',
+          message: 'Subscription failed. Please try again.',
+        });
+      }
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message: 'An error occurred. Please try again later.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer
       className="mt-auto w-full"
@@ -133,13 +173,13 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-2">
-            <h4 className="font-semibold text-gray-100 text-center font-century-gothic">
+          <div className="col-span-2 px-4 sm:px-0 max-w-md mx-auto w-full">
+            <h4 className="font-semibold text-gray-100 text-center font-century-gothic mb-4">
               Stay up to date
             </h4>
-            <form>
-              <div className="mt-4 flex flex-col sm:flex-row w-full">
-                <div className="w-full sm:flex-1">
+            <form onSubmit={handleSubscribe}>
+              <div className="flex flex-col gap-2 sm:flex-row sm:gap-0">
+                <div className="flex-1">
                   <label htmlFor="hero-input" className="sr-only">
                     Subscribe
                   </label>
@@ -147,19 +187,30 @@ const Footer = () => {
                     type="email"
                     id="hero-input"
                     name="hero-input"
-                    className="py-3 px-4 block w-full border-transparent rounded-l-lg text-sm bg-white text-black focus:border-blue-500 focus:ring-blue-500"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full py-3 px-4 border-transparent rounded-lg sm:rounded-r-none text-sm bg-white text-black focus:border-blue-500 focus:ring-blue-500"
                     placeholder="Enter your email"
                     aria-label="Email address"
+                    required
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full sm:w-auto whitespace-nowrap py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-r-lg border border-transparent bg-customBlue text-white hover:bg-black-900 focus:outline-none focus:bg-black"
+                  disabled={isSubmitting}
+                  className="w-full sm:w-auto whitespace-nowrap py-3 px-6 flex justify-center items-center text-sm font-medium rounded-lg sm:rounded-l-none border border-transparent bg-customBlue text-white hover:bg-black-900 focus:outline-none focus:bg-black disabled:opacity-50 transition-colors duration-200"
                 >
-                  Subscribe
+                  {isSubmitting ? 'Subscribing...' : 'Subscribe'}
                 </button>
               </div>
-              <p className="mt-3 text-sm text-gray-400 text-center">
+              {status.message && (
+                <p className={`mt-3 text-sm text-center ${
+                  status.type === 'success' ? 'text-green-400' : 'text-red-400'
+                }`}>
+                  {status.message}
+                </p>
+              )}
+              <p className="mt-3 text-sm text-gray-400 text-center px-4">
                 We care about the protection of your data.
               </p>
             </form>

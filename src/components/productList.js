@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ProductCard = ({ product }) => {
   return (
@@ -55,10 +56,18 @@ const ProductCard = ({ product }) => {
 };
 
 const ProductListing = ({ products = [] }) => {
+  // Get the category from the first product in the array
+  const category = products[0]?.category || 'Products';
+
   return (
     <div className="w-full mx-auto p-6 bg-white">
       {/* Breadcrumb for navigation */}
-      <div className="mb-4 text-sm text-gray-500">Home {'>'} Weighing</div>
+      <div className="mb-4 text-sm text-gray-500">
+        <Link href="/" className="hover:text-gray-700">
+          Home
+        </Link>{' '}
+        {'>'} {category}
+      </div>
 
       {/* Product Grid */}
       <div className="md:px-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
