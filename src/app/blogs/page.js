@@ -12,7 +12,7 @@ export const metadata = {
     title: 'Asian Scales Blog',
     description: 'Discover insights about weighing, automation, and trading solutions',
     type: 'website',
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://asian-scales.vercel.app',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
   },
 };
 
