@@ -1,7 +1,7 @@
 import { fetchProducts, fetchBlogs } from '../../firebaseFunctions'
 
 export default async function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://asian-scales.vercel.app'
   const currentDate = new Date().toISOString()
 
   try {
