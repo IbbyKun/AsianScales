@@ -8,14 +8,16 @@ const ProductCard = ({ product }) => {
       {/* Image or No Preview placeholder */}
       <div className="relative w-full aspect-[3/2]">
         {product.images?.[0] ? (
-          <Image
-            src={product.images[0]}
-            alt={product.name}
-            className="object-cover"
-            fill={true}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            priority={false}
-          />
+          <div className="w-full h-full bg-white">
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              className="object-contain w-full h-full"
+              fill={true}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority={false}
+            />
+          </div>
         ) : (
           <div className="w-full h-full bg-gray-300 flex items-center justify-center">
             <p className="text-gray-600 text-lg">No Preview Available</p>
