@@ -80,7 +80,13 @@ const BlogPost = () => {
                 /> */}
                 <div>
                   <p className="font-medium text-gray-900">{blog.author}</p>
-                  <p className="text-gray-500 text-sm">{blog.date}</p>
+                  <p className="text-gray-500 text-sm">
+                    {new Date(blog.date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric'
+                    })}
+                  </p>
                 </div>
               </div>
 

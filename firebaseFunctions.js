@@ -36,9 +36,39 @@ export const addBlog = async (blogData) => {
   const blogId = new Date().getTime();
   const blogRef = ref(db, "blogs/" + blogId);
 
+  // Handle multiple images in description
+  let description = blogData.description;
+  if (description) {
+    const imgTags = description.match(/<img[^>]+src="([^">]+)"/g);
+    if (imgTags) {
+      for (const imgTag of imgTags) {
+        const file = imgTag.match(/data:image\/[^;]+;base64[^"]+/);
+        if (file) {
+          try {
+            const data = new FormData();
+            const blob = await fetch(file[0]).then(r => r.blob());
+            data.append('file', blob);
+            data.append('upload_preset', 'asianScalesPreset');
+            data.append('cloud_name', 'dgyiw2zu8');
+
+            const res = await fetch('https://api.cloudinary.com/v1_1/dgyiw2zu8/image/upload', {
+              method: 'POST',
+              body: data,
+            });
+            const uploadedImage = await res.json();
+            description = description.replace(file[0], uploadedImage.url);
+          } catch (error) {
+            console.error("Error uploading image:", error);
+          }
+        }
+      }
+    }
+  }
+
   // Add SEO-friendly fields
   const enhancedBlogData = {
     ...blogData,
+    description, // Updated description with Cloudinary URLs
     date: new Date().toISOString(),
     lastModified: new Date().toISOString(),
     metaTitle: blogData.metaTitle || blogData.title,
