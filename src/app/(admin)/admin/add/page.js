@@ -9,7 +9,10 @@ import { addBlog, fetchBlogById, updateBlog } from '../../../../../firebaseFunct
 import 'react-quill/dist/quill.snow.css';
 import Image from 'next/image';
 
-const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
+const ReactQuill = dynamic(() => import('react-quill'), { 
+  ssr: false,
+  loading: () => <p>Loading editor...</p>,
+});
 
 function BlogForm() {
   const router = useRouter();
@@ -31,6 +34,7 @@ function BlogForm() {
 
   const [isImageLoading, setIsImageLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false); // State for authentication
+  const [quillLoaded, setQuillLoaded] = useState(false); // Add this new state
 
   // Check authentication on mount
   useEffect(() => {
@@ -56,6 +60,11 @@ function BlogForm() {
       getBlogData();
     }
   }, [editId, isAuthenticated]);
+
+  // Add this useEffect
+  useEffect(() => {
+    setQuillLoaded(true);
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -106,6 +115,25 @@ function BlogForm() {
 
     router.push('/admin/dashboard');
   };
+
+  const quillModules = {
+    toolbar: [
+      [{ 'header': [1, 2, 3, false] }],
+      ['bold', 'italic', 'underline', 'strike'],
+      ['blockquote', 'code-block'],
+      [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+      ['link', 'image'],
+      ['clean']
+    ]
+  };
+
+  const quillFormats = [
+    'header',
+    'bold', 'italic', 'underline', 'strike',
+    'blockquote', 'code-block',
+    'list', 'bullet',
+    'link', 'image'
+  ];
 
   if (!isAuthenticated) {
     return <div>Loading...</div>; // Show loading screen during authentication check
@@ -175,14 +203,18 @@ function BlogForm() {
           value={blog.category}
           onChange={handleInputChange}
         />
-        <div>
+        <div className="mb-8">
           <h2 className="text-lg font-semibold mb-2 text-black">Description</h2>
-          <ReactQuill
-            value={blog.description}
-            onChange={handleDescriptionChange}
-            className="bg-white text-black"
-            theme="snow"
-          />
+          <div className="h-[400px]">
+            <ReactQuill
+              value={blog.description}
+              onChange={handleDescriptionChange}
+              modules={quillModules}
+              formats={quillFormats}
+              theme="snow"
+              className="h-[350px] [&_.ql-editor]:text-black"
+            />
+          </div>
         </div>
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded"
