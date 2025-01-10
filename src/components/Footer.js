@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../public/assets/logos/logo.png';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -56,13 +58,15 @@ const Footer = () => {
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
           <div className="col-span-full lg:col-span-1 lg:text-center mt-8">
-            <a
-              className="flex-none text-xl font-semibold text-white focus:outline-none focus:opacity-80"
-              href="#"
-              aria-label="Brand"
-            >
-              Brand
-            </a>
+            <Link href="/" className="inline-block">
+              <Image
+                src={logo}
+                alt="Asian Scales Logo"
+                width={120}
+                height={120}
+                className="object-contain"
+              />
+            </Link>
           </div>
           <div className="col-span-1 text-center ml-8">
             <h4 className="font-semibold text-gray-100 font-century-gothic text-center">
@@ -72,14 +76,24 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-center text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
-                  href="tel:0321-1234567"
+                  href="tel:+924232147717377"
                   aria-label="Contact number"
                 >
-                  0321-1234567
+                  +92 42 321-4771737
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-center text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200"
+                  href="tel:+924232147717344"
+                  aria-label="Contact number"
+                >
+                  +92 42 321-4771734
                 </a>
               </p>
               <p className="inline-flex gap-x-2 text-center text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200">
-                Street no. 47, Defence Hailay Tower, Floor 10, Office no. 7
+                Asians Company, Service Lane, Harbanspura to GT road Near masjid Ayesha, 
+                Harbanspura interchange Ring Road, Lahore, Pakistan.
               </p>
             </div>
           </div>
@@ -98,7 +112,7 @@ const Footer = () => {
               </p>
               <p>
                 <Link
-                  href="/weighing"
+                  href="/list/weighing"
                   className="inline-flex gap-x-2 text-gray-400 text-center hover:text-gray-200 focus:outline-none focus:text-gray-200"
                 >
                   Weighing
@@ -106,7 +120,7 @@ const Footer = () => {
               </p>
               <p>
                 <Link
-                  href="/automation"
+                  href="/list/automation"
                   className="inline-flex gap-x-2 text-gray-400 text-center hover:text-gray-200 focus:outline-none focus:text-gray-200"
                 >
                   Automation
@@ -114,7 +128,7 @@ const Footer = () => {
               </p>
               <p>
                 <Link
-                  href="/trading"
+                  href="/list/trading"
                   className="inline-flex gap-x-2 text-gray-400 text-center hover:text-gray-200 focus:outline-none focus:text-gray-200"
                 >
                   Trading

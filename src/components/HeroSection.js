@@ -24,9 +24,9 @@ const HeroSection = () => {
 
   // Trigger number animations when component mounts
   useEffect(() => {
-    animateNumbers(0, 1019000, 2000, setCustomers); // Customers
-    animateNumbers(0, 16, 2000, setYears); // Years of experience
-    animateNumbers(0, 1128000, 2000, setProducts); // Products delivered
+    animateNumbers(0, 500, 2000, setCustomers); // 500+ Satisfied Customers
+    animateNumbers(0, 30, 2000, setYears); // 30+ Years Experience
+    animateNumbers(0, 1000000, 2000, setProducts); // 1,000,000+ Products Delivered
   }, []);
 
   return (
@@ -62,24 +62,20 @@ const HeroSection = () => {
         </div>
 
         {/* Animated Numbers */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-3 md:gap-16">
           <div className="text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-              {customers.toLocaleString()}+
-            </h2>
-            <p className="text-sm md:text-base">Satisfied Customers</p>
+            <h3 className="text-3xl font-bold text-white mb-2">{customers}+</h3>
+            <p className="text-gray-400">Satisfied Customers</p>
           </div>
           <div className="text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-              {years}+
-            </h2>
-            <p className="text-sm md:text-base">Years Experience</p>
+            <h3 className="text-3xl font-bold text-white mb-2">{years}+</h3>
+            <p className="text-gray-400">Years Experience</p>
           </div>
           <div className="text-center">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+            <h3 className="text-3xl font-bold text-white mb-2">
               {products.toLocaleString()}+
-            </h2>
-            <p className="text-sm md:text-base">Products Delivered</p>
+            </h3>
+            <p className="text-gray-400">Products Delivered</p>
           </div>
         </div>
       </div>

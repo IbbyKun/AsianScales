@@ -4,24 +4,24 @@ import React from 'react';
 import Image from 'next/image';
 
 const companies = [
-  { name: 'Amazon', logo: '/assets/logos/amazon-logo.png', since: '2016' },
-  { name: 'Apple', logo: '/assets/logos/apple-logo.png', since: '2005' },
-  { name: 'Google', logo: '/assets/logos/google-logo.png', since: '2019' },
-  {
-    name: 'Microsoft',
-    logo: '/assets/logos/microsoft-logo.png',
-    since: '1995',
-  },
+  { name: 'Siemens', logo: 'https://i.ibb.co/5LH1VVm/image-removebg-preview-3.png' },
+  { name: 'Zemic Europe', logo: 'https://i.ibb.co/0ZGtzw6/image-removebg-preview-2.png' },
+  { name: 'Mettler Toledo', logo: 'https://i.ibb.co/zXf0Fgn/image-removebg-preview-1.png'},
+  { name: 'Flintec', logo: 'https://i.ibb.co/fq4KRZY/image-removebg-preview.png' },
+  { name: 'Dacell', logo: 'https://i.ibb.co/3T3pr7Q/dacell-removebg-preview.png' },
+  { name: 'Sang', logo: 'https://i.ibb.co/Bc4s2DW/sang-removebg-preview.png' },
+  { name: 'Tanaka', logo: 'https://i.ibb.co/zZRwSR7/tanaka-removebg-preview.png' },
+  { name: 'Yaohua', logo: 'https://i.ibb.co/5sQWV0w/yaohua-removebg-preview.png' }
 ];
 
 const CompanyCards = () => {
   return (
     <div className="flex flex-col w-full py-8 bg-white">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 text-black">
-        MEET OUR PARTNERS
+        MEET OUR PRINCIPLES
       </h2>
       <p className="text-center text-lightGray mb-8 font-light lg:mb-16 sm:text-xl">
-        Our partners Speak for our Quality
+        Our principles Speak for our Quality
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-8 md:px-12 lg:px-16">
         {companies.map((company, index) => (
@@ -29,15 +29,16 @@ const CompanyCards = () => {
             key={index}
             className="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center transition-transform hover:scale-105"
           >
-            <Image
-              src={company.logo}
-              alt={company.name}
-              className="mb-4 transition-transform hover:brightness-110"
-              width={80}
-              height={80}
-            />
-            <h3 className="text-lg font-semibold">{company.name}</h3>
-            <p className="text-gray-500">Customers since {company.since}</p>
+            <div className="relative w-full h-28"> 
+              <Image
+                src={company.logo}
+                alt={company.name}
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+            <h3 className="text-lg font-semibold text-black mt-4">{company.name}</h3>
           </div>
         ))}
       </div>
