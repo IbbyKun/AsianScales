@@ -4,15 +4,14 @@ import React from 'react';
 import Image from 'next/image';
 
 const companies = [
-  { name: 'Airbnb', logo: '/assets/logos/customers/airbnb-logo.svg' },
-  { name: 'Google', logo: '/assets/logos/customers/google-logo.svg' },
-  { name: 'Microsoft', logo: '/assets/logos/customers/microsoft-logo.svg' },
-  { name: 'Spotify', logo: '/assets/logos/customers/spotify-logo.svg' },
-  { name: 'Apple', logo: '/assets/logos/customers/apple-logo.svg' },
-  { name: 'Mashable', logo: '/assets/logos/customers/mashable-logo.svg' },
-  { name: 'Mailchimp', logo: '/assets/logos/customers/mailchimp-logo.svg' },
-  { name: 'Slack', logo: '/assets/logos/customers/slack-logo.svg' },
-  { name: 'TED', logo: '/assets/logos/customers/ted-logo.svg' },
+  { name: 'Ittehad Chemicals Ltd.', logo: 'https://i.ibb.co/dQBCzLk/image-removebg-preview-10.png' },
+  { name: 'Pak Atomic Energy Commission', logo: 'https://i.ibb.co/qBMMgzs/image-removebg-preview-9.png' },
+  { name: 'Hascol', logo: 'https://i.ibb.co/QNpBK27/image-removebg-preview-8.png' },
+  { name: 'Fongas', logo: 'https://i.ibb.co/YPtzR83/image-removebg-preview-7.png' },
+  { name: 'Burshane Petroleum', logo: 'https://i.ibb.co/THsz7bv/image-removebg-preview-6.png' },
+  { name: 'SSGC', logo: 'https://i.ibb.co/Hr4Dn1S/image-removebg-preview-5.png' },
+  { name: 'PSO', logo: 'https://i.ibb.co/WF1YCwM/image-removebg-preview-4.png' },
+  { name: 'Parco', logo: 'https://i.ibb.co/W2sHg6z/parco.png' },
 ];
 
 const CustomersSection = () => {
@@ -39,9 +38,9 @@ const CustomersSection = () => {
             <Image
               src={company.logo}
               alt={company.name}
-              className="h-12 grayscale hover:grayscale-0 hover:scale-110 transition-transform duration-300"
+              className="h-20 grayscale hover:grayscale-0 hover:scale-110 transition-transform duration-300"
               width={100}
-              height={50}
+              height={100}
             />
           </div>
         ))}

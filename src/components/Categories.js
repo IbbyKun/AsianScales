@@ -15,9 +15,9 @@ const ProductCategories = () => {
       link: '/list/weighing',
     },
     {
-      title: 'Gas',
+      title: 'Automation',
       imgSrc: image2, // Image path
-      link: '/list/gas',
+      link: '/list/automation',
     },
   ];
 

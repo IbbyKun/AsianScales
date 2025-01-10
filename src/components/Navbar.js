@@ -72,6 +72,22 @@ const Navbar = () => {
                       Gas Equipment
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/list/automation"
+                      className="text-white hover:text-gray-400 cursor-pointer"
+                    >
+                      Automation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/list/trading"
+                      className="text-white hover:text-gray-400 cursor-pointer"
+                    >
+                      Trading
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div>
@@ -229,6 +245,22 @@ const Navbar = () => {
                           className="text-white hover:text-gray-400"
                         >
                           Gas Equipment
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/list/automation"
+                          className="text-white hover:text-gray-400"
+                        >
+                          Automation
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/list/trading"
+                          className="text-white hover:text-gray-400"
+                        >
+                          Trading
                         </Link>
                       </li>
                     </ul>
