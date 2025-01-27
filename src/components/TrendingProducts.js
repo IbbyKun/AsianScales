@@ -36,7 +36,7 @@ const TrendingProducts = ({ subtitle }) => {
       {subtitle && (
         <div>
           <h1 className="text-center text-3xl md:text-6xl font-bold mb-4 text-black">
-            Trending Products
+            TRENDING PRODUCTS
           </h1>
           <p className="text-center text-lg text-gray-600 mb-8">
             Check out our Trending Products at this Moment

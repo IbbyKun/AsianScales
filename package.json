@@ -33,6 +33,7 @@
         "sharp": "^0.33.5",
         "slick-carousel": "^1.8.1",
         "swiper": "^11.1.15",
+        "tailwind-scrollbar-hide": "^2.0.0",
         "three": "^0.171.0"
     },
     "devDependencies": {

@@ -42,7 +42,7 @@ const ProductOverview = ({ product }) => {
   const cameraZ = modelConfig?.cameraZ;
 
   return (
-    <div className="bg-white p-6 border-b border-gray-300 mt-20">
+    <div className="bg-white p-6 border-b border-gray-300 md:mt-16 mt-12">
       <div className="max-w-7xl mx-auto text-center">
         {/* Breadcrumb */}
         <div className="text-gray-500 mb-4 text-left">
@@ -70,7 +70,7 @@ const ProductOverview = ({ product }) => {
         {/* 3D Model Section */}
         <div className="mt-8 text-center">
           {modelPath ? (
-            <div style={{ height: '400px' }}>
+            <div style={{ height: '400px' }} className="max-w-2xl mx-auto">
               <Suspense fallback={<div>Loading 3D model...</div>}>
                 <Canvas camera={{ position: [0, 0, cameraZ] }}>
                   <ambientLight intensity={0.5} />

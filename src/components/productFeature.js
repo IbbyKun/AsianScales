@@ -22,12 +22,6 @@ const ProductFeatures = ({ product }) => {
     ? description.split('.').map((feature) => feature.trim()).filter(Boolean)
     : [];
 
-  // Pair up features into sections
-  const featurePairs = [];
-  for (let i = 0; i < features.length; i += 2) {
-    featurePairs.push(features.slice(i, i + 2)); // Group every two features
-  }
-
   // Array of logos to cycle through
   const logos = [logo1, logo2, logo3, logo4, logo5];
 
@@ -38,27 +32,19 @@ const ProductFeatures = ({ product }) => {
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-black">Features</h2>
 
-          {/* Loop through feature pairs and display them with logos */}
-          {featurePairs.map((pair, index) => (
-            <div key={index} className="space-y-4">
-              <div className="flex items-center space-x-4">
-                {/* Display logos in a cycle */}
-                {pair.map((_, logoIndex) => (
-                  <Image
-                    key={logoIndex}
-                    src={logos[logoIndex % logos.length]} // Cycle logos using modulo
-                    alt={`Logo ${logoIndex + 1}`}
-                    className="w-10 h-10"
-                  />
-                ))}
+          {/* Display each feature individually with a logo */}
+          {features.map((feature, index) => (
+            <div key={index} className="flex flex-col space-y-2">
+              <div className="flex-shrink-0">
+                <Image
+                  src={logos[index % logos.length]}
+                  alt={`Feature icon ${index + 1}`}
+                  className="w-12 h-12  border-gray-200 rounded-lg"
+                />
               </div>
-              <div className="ml-14 text-gray-600">
-                {pair.map((line, lineIndex) => (
-                  <p key={lineIndex} className="text-black">
-                    • {line}
-                  </p>
-                ))}
-              </div>
+              <p className="text-black">
+                • {feature}
+              </p>
             </div>
           ))}
         </div>

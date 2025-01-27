@@ -23,24 +23,28 @@ const CompanyCards = () => {
       <p className="text-center text-lightGray mb-8 font-light lg:mb-16 sm:text-xl">
         Our principles Speak for our Quality
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-8 md:px-12 lg:px-16">
-        {companies.map((company, index) => (
-          <div
-            key={index}
-            className="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center transition-transform hover:scale-105"
-          >
-            <div className="relative w-full h-28"> 
-              <Image
-                src={company.logo}
-                alt={company.name}
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
+      <div className="relative px-4 sm:px-8 md:px-12 lg:px-16">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-4 scrollbar-hide">
+          {companies.map((company, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center transition-transform hover:scale-105 flex-shrink-0 w-[280px] sm:w-auto"
+            >
+              <div className="relative w-full h-28">
+                <Image
+                  src={company.logo}
+                  alt={company.name}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-black mt-4">{company.name}</h3>
             </div>
-            <h3 className="text-lg font-semibold text-black mt-4">{company.name}</h3>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-white to-transparent w-12 h-full sm:hidden" />
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-white to-transparent w-12 h-full sm:hidden" />
       </div>
     </div>
   );
