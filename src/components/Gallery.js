@@ -9,10 +9,10 @@ function Gallery({ subtitle }) {
     <div className="pb-16 bg-white md:h-screen">
       {subtitle && (
         <div className="text-center pt-16 pb-12">
-          <h1 className="bebas-neue-regular text-black text-6xl lg:text-8xl">
-            Gallery
+          <h1 className="text-black font-bold text-6xl lg:text-7xl">
+            GALLERY
           </h1>
-          <p className="font-century-gothic text-lightGray text-base lg:text-lg mt-4 max-w-2xl mx-auto px-8 lg:px-2">
+          <p className="text-lightGray text-base lg:text-lg mt-4 max-w-2xl mx-auto px-8 lg:px-2">
             We are strategists, designers, and developers. Innovators and
             problem solvers. Small enough to be simple and quick, but big enough
             to deliver the scope you want at the pace you need.
