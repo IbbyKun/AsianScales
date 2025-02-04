@@ -27,9 +27,11 @@ const ProductCard = ({ product }) => {
 
       {/* Product Details */}
       <div className="p-4 flex-grow flex flex-col justify-between">
-        {/* Category Tag */}
+        {/* Category/Subcategory Tag */}
         <div className="bg-gray-800 text-white text-xs px-2 py-1 mb-2 rounded-full w-1/4 text-center">
-          {product.category}
+          {product.category.toLowerCase() === 'weighing' 
+            ? product.subcategory 
+            : product.category}
         </div>
 
         {/* Product Name */}
