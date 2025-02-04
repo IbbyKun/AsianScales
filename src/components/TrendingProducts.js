@@ -17,7 +17,7 @@ const TrendingProducts = ({ subtitle }) => {
         const slugName = product.name.toLowerCase().replace(/\s+/g, '_');
         return (
           slugName === 'automatic_lpg_cylinder_filling_machine_(complete)' ||
-          slugName === 'pallet_scale'
+          slugName === 'concrete_weighbridge'
         );
       });
       setProducts(trendingProducts);

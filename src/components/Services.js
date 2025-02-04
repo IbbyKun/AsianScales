@@ -11,21 +11,25 @@ const services = [
     description:
       'Water bath Type (Heating Medium: Water Heating Source) Water bath Type (Heating Medium: Water Heating Source)',
     color: 'bg-blue-800',
-    image: serviceImage,
+    image: 'https://i.ibb.co/kVd0M82L/Weighing-service-2.jpg',
+    image2:'https://i.ibb.co/20ZnBDJ7/weighing-service.webp',
+
   },
   {
     title: 'Automation',
     description:
       'Water bath Type (Heating Medium: Water Heating Source) Water bath Type (Heating Medium: Water Heating Source)',
     color: 'bg-red-600',
-    image: serviceImage,
+    image: 'https://i.ibb.co/Z63qpBZG/automation-service.png',
+    image2:'https://i.ibb.co/yBsFw8hC/automation-servie.jpg',
   },
   {
     title: 'Trading',
     description:
       'Water bath Type (Heating Medium: Water Heating Source) Water bath Type (Heating Medium: Water Heating Source)',
     color: 'bg-blue-800',
-    image: serviceImage,
+    image: 'https://i.ibb.co/zy12tyw/trading-service-1.jpg',
+    image2:'https://i.ibb.co/bgkwtT33/trading-2.jpg',
   },
 ];
 
@@ -50,7 +54,7 @@ const ServiceTile = ({ service, index }) => {
       <div
         className={`relative w-full sm:w-1/2 flex items-center ${service.color} p-6 sm:p-8 ${!isEven ? 'sm:order-1' : ''}`}
         style={{
-          backgroundImage: `url(${service.image.src})`,
+          backgroundImage: `url(${service.image2})`,
           backgroundBlendMode: 'overlay',
           backgroundSize: 'cover',
         }}

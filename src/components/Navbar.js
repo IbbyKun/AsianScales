@@ -66,14 +66,6 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link
-                      href="/list/gas"
-                      className="text-white hover:text-gray-400 cursor-pointer"
-                    >
-                      Gas Equipment
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href="/list/automation"
                       className="text-white hover:text-gray-400 cursor-pointer"
                     >
@@ -146,6 +138,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 relative">
           {/* Logo */}
           <div className="flex items-center transition-all duration-300">
+          <Link href="/">
             <Image
               src={logo}
               alt="Logo"
@@ -153,6 +146,7 @@ const Navbar = () => {
               height={50}
               width={50}
             />
+            </Link>
           </div>
 
           {/* Desktop Menu */}
