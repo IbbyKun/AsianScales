@@ -14,39 +14,40 @@ const companies = [
   { name: 'Parco', logo: 'https://i.ibb.co/W2sHg6z/parco.png' },
 ];
 
-const CustomersSection = () => {
+const CustomerSection = () => {
   return (
-    <div className="relative bg-white py-8 px-4 md:px-16 flex flex-col md:flex-row items-start justify-between">
-      {/* Blue rectangle behind the text, hidden on smaller screens */}
-      <div className="absolute hidden md:block bg-customBlue h-2/3 w-2/5 top-10 left-0 rounded-r-xl"></div>
-
-      {/* Text section - modified for better mobile responsiveness */}
-      <div className="relative z-10 w-full md:w-1/2 py-8 text-center md:text-left">
-        <h2 className="text-3xl font-bold text-customBlue md:text-white">
-          Our Customers Make Us Great
-        </h2>
-        <p className="mt-4 text-customBlue md:text-white">
-          Here at Asian Scales, we focus on markets where technology,
-          <br className="hidden md:block" /> innovation, and capital can unlock long-term value.
-        </p>
-      </div>
-
-      {/* Logos section - modified for 3 items per row on mobile */}
-      <div className="w-full md:w-1/2 grid grid-cols-3 md:flex md:flex-wrap justify-center items-start gap-6">
-        {companies.map((company, index) => (
-          <div key={index} className="flex justify-center">
-            <Image
-              src={company.logo}
-              alt={company.name}
-              className="h-20 grayscale hover:grayscale-0 hover:scale-110 transition-transform duration-300"
-              width={100}
-              height={100}
-            />
-          </div>
-        ))}
+    <div className="flex flex-col w-full py-8 bg-white">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 text-black">
+        MEET OUR PRINCIPLES
+      </h2>
+      <p className="text-center text-lightGray mb-8 font-light lg:mb-16 sm:text-xl">
+        Our principles Speak for our Quality
+      </p>
+      <div className="relative px-4 sm:px-8 md:px-12 lg:px-16">
+        <div className="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-4 scrollbar-hide">
+          {companies.map((company, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center transition-transform hover:scale-105 flex-shrink-0 w-[280px] sm:w-auto"
+            >
+              <div className="relative w-full h-28">
+                <Image
+                  src={company.logo}
+                  alt={company.name}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-black mt-4">{company.name}</h3>
+            </div>
+          ))}
+        </div>
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-gradient-to-r from-white to-transparent w-12 h-full sm:hidden" />
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-white to-transparent w-12 h-full sm:hidden" />
       </div>
     </div>
   );
 };
 
-export default CustomersSection;
+export default CustomerSection;

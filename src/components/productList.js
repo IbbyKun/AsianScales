@@ -72,7 +72,7 @@ const ProductListing = ({ products = [] }) => {
   return (
     <div className="w-full mx-auto p-6 bg-white">
       {/* Breadcrumb for navigation */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
         <div className="text-sm text-gray-500">
           <Link href="/" className="hover:text-gray-700">
             Home
@@ -82,7 +82,7 @@ const ProductListing = ({ products = [] }) => {
 
         {/* Subcategory dropdown for weighing products */}
         {showSubcategoryFilter && (
-          <div className="relative">
+          <div className="relative mx-auto md:right-20">
             <select
               value={selectedSubcategory}
               onChange={(e) => setSelectedSubcategory(e.target.value)}
