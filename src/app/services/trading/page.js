@@ -12,7 +12,7 @@ const TradingServicePage = () => {
       <Navbar />
       <div className="mt-20">
         <TrendingProducts subtitle={false} />
-        <ProductGallery subtitle={false} />
+        <ProductGallery subtitle={false} category="trading"/>
         <Footer />
       </div>
     </div>

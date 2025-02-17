@@ -12,7 +12,7 @@ const AutomationServicePage = () => {
       <Navbar />
       <div className="mt-20">
         <TrendingProducts subtitle={false} />
-        <ProductGallery subtitle={false} />
+        <ProductGallery subtitle={false} category="automation"/>
         <Footer />
       </div>
     </div>
