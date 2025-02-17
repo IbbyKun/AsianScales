@@ -2,8 +2,6 @@
 
 import React from 'react';
 import Image from 'next/image';
-import image1 from '../../public/assets/Images/person1.jpg'; // Replace with actual image
-import image2 from '../../public/assets/Images/person2.jpg'; // Replace with actual image
 import { useRouter } from 'next/navigation';
 
 const ProductCategories = () => {
@@ -11,12 +9,12 @@ const ProductCategories = () => {
   const categories = [
     {
       title: 'Weighing',
-      imgSrc: image1, // Image path
+      imgSrc: "https://i.ibb.co/CKLmn5YW/weighing.jpg", // Image path
       link: '/list/weighing',
     },
     {
       title: 'Automation',
-      imgSrc: image2, // Image path
+      imgSrc: "https://i.ibb.co/PGqrcGrD/automation-servie.jpg", // Image path
       link: '/list/automation',
     },
   ];
