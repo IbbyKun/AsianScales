@@ -15,39 +15,48 @@ const galleryImages = [
   { src: "https://i.ibb.co/ycWMTTG7/IMG-4761.png", alt: "Dedication at Work" },
 ];
 
+const weighingGallery = [
+  { src: "https://i.ibb.co/d0gZRyNw/IMG-4772.png", alt: "Precision Weighing Equipment" },
+  { src: "https://i.ibb.co/4wLDKwPk/IMG-4771.png", alt: "Industrial Scale Solutions" },
+  { src: "https://i.ibb.co/mVXBLXgH/IMG-4775.png", alt: "Advanced Weighing Systems" },
+  { src: "https://i.ibb.co/dsSHbzvn/IMG-4753.png", alt: "Quality Control Weighing" },
+  { src: "https://i.ibb.co/6R495Pdd/IMG-4750.png", alt: "Laboratory Scales" },
+  { src: "https://i.ibb.co/ycWMTTG7/IMG-4761.png", alt: "Commercial Weighing Solutions" }
+];
+
+const automationGallery = [
+  { src: "https://i.ibb.co/4wLDKwPk/IMG-4771.png ", alt: "Automated Control Systems" },
+  { src: "https://i.ibb.co/RThXDt58/IMG-4752.png", alt: "Industrial Automation" },
+  { src: "https://i.ibb.co/6R495Pdd/IMG-4750.png", alt: "Smart Manufacturing Solutions" },
+  { src: "https://i.ibb.co/czhpNqS/IMG-4758.png", alt: "Process Automation" },
+  { src: "https://i.ibb.co/M4VnF76/IMG-4755.png", alt: "Automated Production Lines" },
+  { src: "https://i.ibb.co/YB8zbJN3/IMG-4748.png", alt: "Control Systems Integration" }
+];
+
+const tradingGallery = [
+  { src: "https://i.ibb.co/nN7jBR9w/IMG-4756.png", alt: "Global Trading Solutions" },
+  { src: "https://i.ibb.co/dsSHbzvn/IMG-4753.png", alt: "International Commerce" },
+  { src: "https://i.ibb.co/9kbv0Lny/IMG-4766.png", alt: "Supply Chain Excellence" },
+  { src: "https://i.ibb.co/mVXBLXgH/IMG-4775.png", alt: "Quality Trading Products" },
+  { src: "https://i.ibb.co/d0gZRyNw/IMG-4772.png", alt: "Business Solutions" },
+  { src: "https://i.ibb.co/ccygC4pT/IMG-4746.png", alt: "Trading Partnerships" }
+];
+
 function Gallery({ subtitle, category }) {
-  const [products, setProducts] = useState([]);
+  const getGalleryByCategory = () => {
+    switch (category?.toLowerCase()) {
+      case 'weighing':
+        return weighingGallery;
+      case 'automation':
+        return automationGallery;
+      case 'trading':
+        return tradingGallery;
+      default:
+        return galleryImages;
+    }
+  };
 
-  useEffect(() => {
-    const loadProducts = async () => {
-      if (!subtitle && category) {
-        try {
-          const allProducts = await fetchProducts();
-          
-          const filteredProducts = allProducts
-            .filter(product => 
-              product.category?.toLowerCase() === category?.toLowerCase() && 
-              product.images && 
-              product.images.length > 0
-            )
-            .slice(0, 6)  // Changed from slice(6, 12) to slice(0, 6) to get first 6 valid products
-            .map(product => ({
-              src: product.images[0],  // We can safely access first image now
-              alt: product.name || 'Product Image'
-            }));
-          
-          setProducts(filteredProducts);
-        } catch (error) {
-          console.error('Error loading products:', error);
-          setProducts([]);
-        }
-      }
-    };
-
-    loadProducts();
-  }, [subtitle, category]);
-
-  const displayImages = subtitle ? galleryImages : products;
+  const displayImages = subtitle ? galleryImages : getGalleryByCategory();
 
   return (
     <div className="pb-16 bg-white md:h-screen">
@@ -77,8 +86,7 @@ function Gallery({ subtitle, category }) {
           <Image
             src={displayImages[0]?.src || ImageSrc}
             alt={displayImages[0]?.alt || "Your Image"}
-            className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 ${
-              subtitle ? 'h-full w-full object-cover' : 'object-contain'
+            className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full object-cover'
             }`}
             fill
           />
@@ -99,8 +107,7 @@ function Gallery({ subtitle, category }) {
               <Image
                 src={displayImages[idx + 1]?.src || ImageSrc}
                 alt={displayImages[idx + 1]?.alt || "Your Image"}
-                className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 ${
-                  subtitle ? 'h-full w-full object-cover' : 'object-contain'
+                className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full object-cover'
                 }`}
                 fill
               />
@@ -116,8 +123,7 @@ function Gallery({ subtitle, category }) {
           <Image
             src={displayImages[5]?.src || ImageSrc}
             alt={displayImages[5]?.alt || "Your Image"}
-            className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 ${
-              subtitle ? 'h-full w-full object-cover' : 'object-contain'
+            className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full object-cover'
             }`}
             fill
           />
