@@ -75,30 +75,30 @@ const ProductListing = ({ products = [] }) => {
     <div className="w-full mx-auto p-6 bg-white">
       {/* Breadcrumb for navigation */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
-        <div className="text-sm text-gray-500">
+        <div className="text-sm text-gray-500 md:w-1/6">
           <Link href="/" className="hover:text-gray-700">
             Home
           </Link>{' '}
           {'>'} {category}
         </div>
 
-        {/* Subcategory dropdown for weighing products */}
+        {/* Subcategory tabs for weighing products */}
         {showSubcategoryFilter && (
-          <div className="relative mx-auto md:right-20">
-            <select
-              value={selectedSubcategory}
-              onChange={(e) => setSelectedSubcategory(e.target.value)}
-              className="block appearance-none w-48 bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            >
-              <option value="All">All Products</option>
-              <option value="Indicators">Indicators</option>
-              <option value="Load Cell Sensors">Load Cell Sensors</option>
-              <option value="Platform Scales">Platform Scales</option>
-            </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-              <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-              </svg>
+          <div className='w-full'>
+            <div className="flex space-x-0">
+              {['All', 'Indicators', 'Load Cell Sensors', 'Platform Scales'].map((subcategory) => (
+                <button
+                  key={subcategory}
+                  onClick={() => setSelectedSubcategory(subcategory)}
+                  className={`w-full px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 
+                    ${selectedSubcategory === subcategory
+                    ? 'bg-[#07509F] text-white'
+                    : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
+                  }`}
+                >
+                  {subcategory === 'All' ? 'All Products' : subcategory}
+                </button>
+              ))}
             </div>
           </div>
         )}
