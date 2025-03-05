@@ -2,48 +2,42 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Person1 from '../../public/assets/Images/person3.jpg';
-import Person2 from '../../public/assets/Images/person4.jpg';
-import Person3 from '../../public/assets/Images/Person5.jpg';
-import Person4 from '../../public/assets/Images/Person6.jpg';
-import Person5 from '../../public/assets/Images/person1.jpg';
-import Person6 from '../../public/assets/Images/person2.jpg';
 
 const OurPeople = () => {
   const cardData = [
     {
       id: 1,
-      image: Person1,
+      image: 'https://i.ibb.co/fYdcWFfw/IMG-5680.jpg',
       title: 'Card Title 1',
       text: 'Your sliding text here 1',
     },
     {
       id: 2,
-      image: Person2,
+      image: 'https://i.ibb.co/jPRdzc7Y/IMG-5664.jpg',
       title: 'Card Title 2',
       text: 'Your sliding text here 2',
     },
     {
       id: 3,
-      image: Person3,
+      image: 'https://i.ibb.co/q3hHYzWY/IMG-5665.jpg',
       title: 'Card Title 3',
       text: 'Your sliding text here 3',
     },
     {
       id: 4,
-      image: Person4,
+      image: 'https://i.ibb.co/v4g24f7W/IMG-5663.jpg',
       title: 'Card Title 4',
       text: 'Your sliding text here 4',
     },
     {
       id: 5,
-      image: Person5,
+      image: 'https://i.ibb.co/tT16NS8r/IMG-5661.jpg',
       title: 'Card Title 5',
       text: 'Your sliding text here 5',
     },
     {
       id: 6,
-      image: Person6,
+      image: 'https://i.ibb.co/Q775HVVV/IMG-5659.jpg',
       title: 'Card Title 6',
       text: 'Your sliding text here 6',
     },

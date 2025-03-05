@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import companyImage from '../../public/assets/Images/Gallery1.jpg'; // Use path relative to public directory
+import AsianLogo from '../../public/assets/logos/logo.png'; // Use path relative to public directory
 
 const OurCompany = () => {
   return (
@@ -24,7 +24,7 @@ const OurCompany = () => {
         ></div>
 
         {/* Text on the Left */}
-        <div className="relative z-20 md:w-1/2 text-white px-8 md:pt-12 md:flex md:flex-col md:justify-center">
+        <div className="relative z-20 md:w-1/2 text-white px-8 md:pt-0 md:flex md:flex-col md:justify-center">
           <h1 className="text-4xl md:text-7xl font-bold mb-6">
             <span className="hidden md:inline-block">
               OUR <br />
@@ -42,16 +42,15 @@ const OurCompany = () => {
         </div>
 
         {/* Image on the Right */}
-        <div className="relative z-20 md:w-1/2 p-4 md:pb-0 flex md:items-end items-center md:h-auto h-64">
-          <div className="relative w-full h-full">
+        <div className="relative z-20 md:w-1/2 flex items-center justify-center h-full">
+          <div className="relative w-full h-full flex items-center justify-center py-8 md:py-0">
             <Image
-              src={companyImage}
-              alt="Our Company"
-              className="object-cover rounded-t-lg md:rounded-tr-lg"
-              fill
-              style={{
-                borderRadius: '20px 20px 0px 0',
-              }}
+              src={AsianLogo}
+              alt="Asian's Logo"
+              width={400}
+              height={200}
+              className="object-contain w-[200px] h-[100px] md:w-[400px] md:h-[200px]"
+              priority
             />
           </div>
         </div>
