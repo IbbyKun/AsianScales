@@ -42,9 +42,9 @@ const ParallaxPage = () => {
         <div className="sticky z-70 bg-white">
       <ServicesPage />
       </div>
-        <div className="sticky top-0 z-80 bg-white">
+        {/* <div className="sticky top-0 z-80 bg-white">
       <Testimonials />
-      </div>
+      </div> */}
         <div className="sticky top-0 z-90 bg-white">
       <Gallery subtitle={true} />
       </div>

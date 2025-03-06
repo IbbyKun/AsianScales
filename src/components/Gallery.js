@@ -59,13 +59,13 @@ function Gallery({ subtitle, category }) {
   const displayImages = subtitle ? galleryImages : getGalleryByCategory();
 
   return (
-    <div className="pb-16 bg-white md:h-screen">
+    <div className="pb-16 bg-white min-h-screen flex flex-col justify-center">
       {subtitle && (
-        <div className="text-center pt-16 pb-12">
-          <h1 className="text-black font-bold text-6xl lg:text-7xl">
+        <div className="text-center pt-8 pb-6 lg:pt-12 lg:pb-8">
+          <h1 className="text-black font-bold text-4xl lg:text-6xl">
             GALLERY
           </h1>
-          <p className="text-lightGray text-base lg:text-lg mt-4 max-w-2xl mx-auto px-8 lg:px-2">
+          <p className="text-lightGray text-sm lg:text-base mt-2 lg:mt-4 max-w-2xl mx-auto px-4 lg:px-2">
             We are strategists, designers, and developers. Innovators and
             problem solvers. Small enough to be simple and quick, but big enough
             to deliver the scope you want at the pace you need.
@@ -73,25 +73,26 @@ function Gallery({ subtitle, category }) {
         </div>
       )}
       {!subtitle && (
-        <div className="text-center pt-16 pb-12">
-          <h1 className="font-bold text-black text-3xl lg:text-6xl">
+        <div className="text-center pt-8 pb-6">
+          <h1 className="font-bold text-black text-2xl lg:text-4xl">
             WHAT WE ALSO OFFER
           </h1>
         </div>
       )}
 
-      <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-2 lg:px-20 px-8">
+      <div className="grid grid-cols-1 gap-3 lg:grid-cols-4 lg:gap-2 lg:px-20 px-4">
         {/* First large image */}
-        <div className="relative h-48 overflow-hidden rounded-lg bg-white lg:col-span-2 group">
+        <div className="relative h-[200px] lg:h-[220px] overflow-hidden rounded-lg bg-white lg:col-span-2 group">
           <Image
             src={displayImages[0]?.src || ImageSrc}
             alt={displayImages[0]?.alt || "Your Image"}
-            className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full object-cover'
-            }`}
-            fill
+            className="rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full h-full object-cover"
+            width={800}
+            height={600}
+            priority
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 z-10 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"></div>
-          <div className="bebas-neue-regular absolute text-2xl bottom-0 left-0 right-50 p-4 text-center text-white z-20 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+          <div className="bebas-neue-regular absolute text-xl lg:text-2xl bottom-0 left-0 right-50 p-3 text-center text-white z-20 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
             <p>{displayImages[0]?.alt || "Your Sliding Text Here"}</p>
           </div>
         </div>
@@ -102,33 +103,33 @@ function Gallery({ subtitle, category }) {
           .map((_, idx) => (
             <div
               key={idx}
-              className="relative h-48 overflow-hidden rounded-lg bg-white group"
+              className="relative h-[200px] lg:h-[220px] overflow-hidden rounded-lg bg-white group"
             >
               <Image
                 src={displayImages[idx + 1]?.src || ImageSrc}
                 alt={displayImages[idx + 1]?.alt || "Your Image"}
-                className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full object-cover'
-                }`}
-                fill
+                className="rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full h-full object-cover"
+                width={400}
+                height={300}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 z-10 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"></div>
-              <div className="bebas-neue-regular absolute text-2xl bottom-0 left-0 right-50 p-4 text-center text-white z-20 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+              <div className="bebas-neue-regular absolute text-xl lg:text-2xl bottom-0 left-0 right-50 p-3 text-center text-white z-20 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
                 <p>{displayImages[idx + 1]?.alt || "Your Sliding Text Here"}</p>
               </div>
             </div>
           ))}
 
         {/* Last large image */}
-        <div className="relative h-48 overflow-hidden rounded-lg bg-white lg:col-span-2 group">
+        <div className="relative h-[200px] lg:h-[220px] overflow-hidden rounded-lg bg-white lg:col-span-2 group">
           <Image
             src={displayImages[5]?.src || ImageSrc}
             alt={displayImages[5]?.alt || "Your Image"}
-            className={`rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full object-cover'
-            }`}
-            fill
+            className="rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110 group-hover:brightness-75 w-full h-full object-cover"
+            width={800}
+            height={600}
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 z-10 transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"></div>
-          <div className="bebas-neue-regular absolute text-2xl bottom-0 left-0 right-50 p-4 text-center text-white z-20 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
+          <div className="bebas-neue-regular absolute text-xl lg:text-2xl bottom-0 left-0 right-50 p-3 text-center text-white z-20 transition-transform duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0">
             <p>{displayImages[5]?.alt || "Your Sliding Text Here"}</p>
           </div>
         </div>
